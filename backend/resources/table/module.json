@@ -1,0 +1,10 @@
+{
+    "settings": [
+        {
+            "title": "key",
+            "type": "text",
+            "options": []
+        }
+    ],
+    "color": "#4caf50"
+}

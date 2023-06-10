@@ -1,0 +1,35 @@
+{
+    "credentials": [
+        {
+            "label": "Access Key",
+            "type": "text",
+            "env": "AWS_ACCESS_KEY_ID"
+        },
+        {
+            "label": "Secret Key",
+            "type": "password",
+            "env": "AWS_SECRET_ACCESS_KEY"
+        },
+        {
+            "label": "Region",
+            "type": "text",
+            "env": "AWS_REGION"
+        },
+        {
+            "label": "S3 Bucket",
+            "type": "text",
+            "env": ""
+        },
+        {
+            "label": "S3 Key",
+            "type": "text",
+            "env": ""
+        },
+        {
+            "label": "S3 Region",
+            "type": "text",
+            "env": ""
+        }
+    ],
+    "color": "#000000"
+}

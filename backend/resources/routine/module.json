@@ -1,0 +1,15 @@
+{
+    "settings": [
+        {
+            "title": "cron",
+            "type": "text",
+            "options": []
+        },
+        {
+            "title": "content",
+            "type": "code",
+            "options": []
+        }
+    ],
+    "color": "#f44336"
+}

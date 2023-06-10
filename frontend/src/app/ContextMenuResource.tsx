@@ -1,0 +1,81 @@
+import Box from '@mui/material/Box'
+import Paper from '@mui/material/Paper'
+import ClickAwayListener from '@mui/material/ClickAwayListener'
+import List from '@mui/material/List'
+import ListItem from '@mui/material/ListItem'
+import ListItemButton from '@mui/material/ListItemButton'
+import ListItemText from '@mui/material/ListItemText'
+import ListItemIcon from '@mui/material/ListItemIcon'
+import Typography from '@mui/material/Typography'
+
+import Delete from '@mui/icons-material/Delete'
+
+import {useState, PropsWithChildren} from 'react'
+
+import State from '../State'
+
+interface ContextMenuResourceProps {
+    state: State,
+}
+
+const options = [
+    "delete"
+]
+
+export const ContextMenuResource = (props: PropsWithChildren<ContextMenuResourceProps>) => {
+    return (
+        <Box position="relative" top="0em" bottom="0em" left="0em" right="0em">
+            <ClickAwayListener onClickAway={() => {
+                if(props.state.state.contextMenuType === "resource") {
+                    props.state.CloseContextMenuResource()
+                }
+            }}>
+                <Box position="fixed" 
+                    top={"min(" + props.state.state.contextMenuY + "px, calc(100vh - " + ((options.length * 2.5) + 4).toString() + "em))"} 
+                    left={props.state.state.contextMenuX} 
+                    display={props.state.state.contextMenuType === "resource" ? "block" : "none"} 
+                >
+                    <Paper variant="outlined" sx={{width: "10em"}}>
+                        <List disablePadding>
+                            <ListItem disablePadding key={-1}>
+                                <Box height="2.5em" width="100%" paddingLeft="1em" display="flex" alignItems="center">
+                                    <Typography paddingTop="0.25em" fontSize="1.1em">
+                                        <b>
+                                            {
+                                                props.state.state.service.resources.find((resource) => resource.index.toString() === props.state.state.contextMenu)?.title
+                                            }
+                                        </b>
+                                    </Typography>
+                                </Box>
+                            </ListItem>
+                            {options.map((option: string) => (
+                                <ListItem disablePadding key={option}>
+                                    <ListItemButton sx={{height: "2.5em"}} onClick={() => {
+                                        props.state.HandleContextMenuResource(props.state.state.contextMenu, option)
+                                    }}>
+                                        <Box position="absolute" top="0" bottom="0" left="0" right="0">
+                                            <Box position="absolute" top="0" bottom="0" left="0" width="3.5em" display="flex" alignItems="center" justifyContent="center">
+                                                {
+                                                    option === "delete" ? (
+                                                        <Delete />
+                                                    ) : <Box />
+                                                }
+                                            </Box>
+                                            <Box position="absolute" top="0" bottom="0" left="3.75em" right="0" display="flex" alignItems="center" justifyContent="left">
+                                                <Typography fontSize="1em">
+                                                    {option}
+                                                </Typography>
+                                            </Box>
+                                        </Box>
+                                    </ListItemButton>
+                                </ListItem>
+                            ))}
+                            <ListItem disablePadding sx={{height: "0.5em"}} />
+                        </List>
+                    </Paper>
+                </Box>
+            </ClickAwayListener>
+        </Box>
+    )
+}
+export default ContextMenuResource

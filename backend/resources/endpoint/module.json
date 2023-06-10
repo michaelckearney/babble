@@ -1,0 +1,25 @@
+{
+    "settings": [
+        {
+            "title": "path",
+            "type": "text",
+            "options": []
+        },
+        {
+            "title": "method",
+            "type": "select",
+            "options": [
+                "GET",
+                "POST",
+                "PUT",
+                "DELETE"
+            ]
+        },
+        {
+            "title": "content",
+            "type": "code",
+            "options": []
+        }
+    ],
+    "color": ""
+}

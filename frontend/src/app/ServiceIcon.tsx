@@ -1,0 +1,39 @@
+import State from '../State'
+
+import Cloud from '@mui/icons-material/Cloud'
+import CloudOutlined from '@mui/icons-material/CloudOutlined'
+import CloudSyncOutlined from '@mui/icons-material/CloudSyncOutlined'
+import CloudDoneOutlined from '@mui/icons-material/CloudDoneOutlined'
+import CloudOff from '@mui/icons-material/CloudOff'
+
+import red from '@mui/material/colors/red'
+import orange from '@mui/material/colors/orange'
+import amber from '@mui/material/colors/amber'
+import green from '@mui/material/colors/green'
+import blue from '@mui/material/colors/blue'
+import purple from '@mui/material/colors/purple'
+
+import createTheme from '@mui/material/styles/createTheme';
+
+interface ServiceIconProps {
+    service: typeof State.prototype.state.service | typeof State.prototype.state.services[number],
+}
+export const ServiceIcon = (props: ServiceIconProps) => {
+    switch (props.service.status.status) {
+        case "activating":
+            return <CloudSyncOutlined sx={{fontSize: "2em", color: amber[400]}} />
+        case "active":
+            return <CloudDoneOutlined sx={{fontSize: "2em", color: green[400]}} />
+        case "deactivating":
+            return <CloudSyncOutlined sx={{fontSize: "2em", color: amber[400]}} />
+        case "deleting":
+            return <CloudSyncOutlined sx={{fontSize: "2em", color: amber[400]}} />
+        case "inactive":
+            return <CloudOutlined sx={{fontSize: "2em"}} />
+        case "error":
+            return <CloudOff sx={{fontSize: "2em", color: red[400]}} />
+        default:
+            return <CloudOutlined sx={{fontSize: "2em"}} />
+    }
+}
+export default ServiceIcon
