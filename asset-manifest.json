@@ -1,0 +1,20 @@
+{
+  "files": {
+    "main.css": "/babble/static/css/main.073c9b0a.css",
+    "main.js": "/babble/static/js/main.f62c8dbb.js",
+    "static/js/787.5c39024c.chunk.js": "/babble/static/js/787.5c39024c.chunk.js",
+    "static/media/linux.svg": "/babble/static/media/linux.120cb2ac92d17333a5993b607756bd97.svg",
+    "static/media/github.svg": "/babble/static/media/github.97ed8e7eef60d61ca469881dd6f34511.svg",
+    "static/media/apple.svg": "/babble/static/media/apple.f59ab48479bd2e7786e81332bc296624.svg",
+    "static/media/linkedin.svg": "/babble/static/media/linkedin.c91f5266aa1c9dc5a6426b9a8fc15617.svg",
+    "index.html": "/babble/index.html",
+    "static/media/windows.svg": "/babble/static/media/windows.24cee601200bbfe9b313109e0029b6cc.svg",
+    "main.073c9b0a.css.map": "/babble/static/css/main.073c9b0a.css.map",
+    "main.f62c8dbb.js.map": "/babble/static/js/main.f62c8dbb.js.map",
+    "787.5c39024c.chunk.js.map": "/babble/static/js/787.5c39024c.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.073c9b0a.css",
+    "static/js/main.f62c8dbb.js"
+  ]
+}
