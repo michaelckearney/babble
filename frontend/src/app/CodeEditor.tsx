@@ -12,7 +12,7 @@ import Editor from '@monaco-editor/react'
 import State from '../State'
 import ServiceIcon from './ServiceIcon'
 
-import {useRef} from 'react'
+import {useRef, useEffect} from 'react'
 
 interface CodeEditorProps {
     state: State
@@ -43,7 +43,7 @@ export const CodeEditor = (props: CodeEditorProps) => {
 
     return (
         <ThemeProvider theme={theme}>
-        <Box display={props.state.state.setting.type === "code" ? "block" : "none"} zIndex={9}>
+        <Box display={props.state.state.setting.type === "code" ? "block" : "none"} zIndex={9} onClick={() => console.log(props.state.state)}>
             <Box position="absolute" top="0em" bottom="0em" left="0em" right="0em">
                 <Box position="absolute" height="4em" top="0em" left="0em" right="0em">
                     <Box position="absolute" width="4em" top="0em" bottom="0em" left="0em" display="flex" alignItems="center" justifyContent="center">
@@ -76,7 +76,7 @@ export const CodeEditor = (props: CodeEditorProps) => {
                         beforeMount = {handleEditorWillMount}
                         onMount = {handleEditorDidMount}
                         theme = "theme1"
-                        key = {props.state.state.size + props.state.state.theme}
+                        key = {props.state.state.size + props.state.state.theme + props.state.state.service.title + props.state.state.resource.title + props.state.state.setting.title}
                         language = "python"
                         onChange = {(e: any) => {
                             props.state.ChangeResourceSetting(props.state.state.resource.index, props.state.state.setting.title, e)
