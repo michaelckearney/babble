@@ -6,10 +6,11 @@
 Babble is a lightweight desktop application for creating and managing fully serverless microservices on AWS. The only programming language you need to know is Python.  Babble uses a lightweight YAML-based framework that drastically improves the size and readability of your codebase while reducing the learning curve for cloud-based microservices development.  
 
 ## Resources
+### <span style="display:inline-block;font-size:1em;text-align:left;border:1px solid red"><svg height="1em" width="1em" style="border:1px solid blue"><img height="24px" src="https://raw.githubusercontent.com/michaelckearney/babble/main/backend/resources/table/icon.svg"></svg>&ensp;&ensp;Test</span>
 
 
 
-### <span style="display:inline-block;font-size:1em;text-align:left;"><svg height="1em" width="1em"><image fill="#000000" xlink:href="https://fonts.gstatic.com/s/i/short-term/release/materialsymbolsoutlined/inventory_2/wght700/48px.svg?sanitize=true" height="1em" width="1em"></svg>&ensp;&ensp;Package</span>
+### <span style="display:inline-block;font-size:1em;text-align:left;"><svg height="1em" width="1em"><image xlink:href="https://fonts.gstatic.com/s/i/short-term/release/materialsymbolsoutlined/inventory_2/wght700/48px.svg?sanitize=true" height="1em" width="1em"></svg>&ensp;&ensp;Package</span>
 
 Packages are used to install Python packages from pip. When deployed, this will be used to create a Lambda Layer that contains the specified dependencies.
 <details>
@@ -30,7 +31,7 @@ Packages are used to install Python packages from pip. When deployed, this will 
     </ul>
 </details>
 
-### <span style="display:inline-block;font-size:1em;text-align:left;"><svg height="1em" width="1em"><image fill="#000000" xlink:href="https://fonts.gstatic.com/s/i/short-term/release/materialsymbolsoutlined/folder/wght700/48px.svg?sanitize=true" height="1em" width="1em"></svg>&ensp;&ensp;Folder</span>
+### <span style="display:inline-block;font-size:1em;text-align:left;"><svg height="1em" width="1em"><image xlink:href="https://fonts.gstatic.com/s/i/short-term/release/materialsymbolsoutlined/folder/wght700/48px.svg?sanitize=true" height="1em" width="1em"></svg>&ensp;&ensp;Folder</span>
 Folders are used to read and write files using cloud-based object storage.  When deployed, this will be used to create an S3 bucket.
 <details>
     <summary>
@@ -41,7 +42,7 @@ Folders are used to read and write files using cloud-based object storage.  When
     </ul>
 </details>
 
-### <span style="display:inline-block;font-size:1em;text-align:left;"><svg height="1em" width="1em"><image fill="#000000" xlink:href="https://fonts.gstatic.com/s/i/short-term/release/materialsymbolsoutlined/table_chart/wght700/48px.svg?sanitize=true" height="1em" width="1em"></svg>&ensp;&ensp;Table</span>
+### <span style="display:inline-block;font-size:1em;text-align:left;"><svg height="1em" width="1em"><image xlink:href="https://fonts.gstatic.com/s/i/short-term/release/materialsymbolsoutlined/table_chart/wght700/48px.svg?sanitize=true" height="1em" width="1em"></svg>&ensp;&ensp;Table</span>
 Tables are used for the storage and retrieval of data entries using cloud-based NoSQL databases.  When deployed, this will be used to create a DynamoDB table.
 <details>
     <summary>
@@ -60,7 +61,7 @@ Tables are used for the storage and retrieval of data entries using cloud-based 
     </ul>
 </details>
 
-### <span style="display:inline-block;font-size:1em;text-align:left;"><svg height="1em" width="1em"><image fill="#000000" xlink:href="https://fonts.gstatic.com/s/i/short-term/release/materialsymbolsoutlined/library_books/wght700/48px.svg?sanitize=true" height="1em" width="1em"></svg>&ensp;&ensp;Library</span>
+### <span style="display:inline-block;font-size:1em;text-align:left;"><svg height="1em" width="1em"><image xlink:href="https://fonts.gstatic.com/s/i/short-term/release/materialsymbolsoutlined/library_books/wght700/48px.svg?sanitize=true" height="1em" width="1em"></svg>&ensp;&ensp;Library</span>
 Libraries are used to import modules from the Python Standard Library, as opposed to importing them in your code.  This exists to 
 <details>
     <summary>
@@ -79,7 +80,7 @@ Libraries are used to import modules from the Python Standard Library, as oppose
     </ul>
 </details>
 
-### <span style="display:inline-block;font-size:1em;text-align:left;"><svg height="1em" width="1em"><image fill="#000000" xlink:href="https://fonts.gstatic.com/s/i/short-term/release/materialsymbolsoutlined/description/wght700/48px.svg?sanitize=true" height="1em" width="1em"></svg>&ensp;&ensp;Script</span>
+### <span style="display:inline-block;font-size:1em;text-align:left;"><svg height="1em" width="1em"><image xlink:href="https://fonts.gstatic.com/s/i/short-term/release/materialsymbolsoutlined/description/wght700/48px.svg?sanitize=true" height="1em" width="1em"></svg>&ensp;&ensp;Script</span>
 <details>
     <summary>
         <b>Settings</b>
@@ -97,7 +98,7 @@ Libraries are used to import modules from the Python Standard Library, as oppose
     </ul>
 </details>
 
-### <span style="display:inline-block;font-size:1em;text-align:left;"><svg height="1em" width="1em"><image fill="#000000" xlink:href="https://fonts.gstatic.com/s/i/short-term/release/materialsymbolsoutlined/calendar_month/wght700/48px.svg?sanitize=true" height="1em" width="1em"></svg>&ensp;&ensp;Routine</span>
+### <span style="display:inline-block;font-size:1em;text-align:left;"><svg height="1em" width="1em"><image xlink:href="https://fonts.gstatic.com/s/i/short-term/release/materialsymbolsoutlined/calendar_month/wght700/48px.svg?sanitize=true" height="1em" width="1em"></svg>&ensp;&ensp;Routine</span>
 
 <details>
     <summary>
@@ -116,7 +117,7 @@ Libraries are used to import modules from the Python Standard Library, as oppose
     </ul>
 </details>
 
-### <span style="display:inline-block;font-size:1em;text-align:left;"><svg height="1em" width="1em"><image fill="#000000" xlink:href="https://fonts.gstatic.com/s/i/short-term/release/materialsymbolsoutlined/cloud/wght700/48px.svg?sanitize=true" height="1em" width="1em"></svg>&ensp;&ensp;Endpoint</span>
+### <span style="display:inline-block;font-size:1em;text-align:left;"><svg height="1em" width="1em"><image xlink:href="https://fonts.gstatic.com/s/i/short-term/release/materialsymbolsoutlined/cloud/wght700/48px.svg?sanitize=true" height="1em" width="1em"></svg>&ensp;&ensp;Endpoint</span>
 <details>
     <summary>
         <b>Settings</b>
