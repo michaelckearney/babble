@@ -10,8 +10,6 @@ Packages are used to install Python packages from pip. When deployed, this will 
 ##### Settings
 - requirements - a list of packages to install from pip, following the [requirements.txt format](https://pip.pypa.io/en/stable/reference/requirements-file-format/)
 ##### Example
-<!-- ![Package Example](https://michaelckearney.s3.amazonaws.com/assets/images/package_example1.jpeg)
-![Package Example](https://michaelckearney.s3.amazonaws.com/assets/images/package_example2.jpeg) -->
 <img src="https://michaelckearney.s3.amazonaws.com/assets/images/package_example1.jpeg" width="100%">
 <img src="https://michaelckearney.s3.amazonaws.com/assets/images/package_example2.jpeg" width="100%">
 
@@ -19,7 +17,6 @@ Packages are used to install Python packages from pip. When deployed, this will 
 ### Folder
 Folders are used to read and write files using cloud-based object storage.  When deployed, this will be used to create an S3 bucket.
 ##### Example
-<!-- ![Folder Example](https://michaelckearney.s3.amazonaws.com/assets/images/folder_example.jpeg) -->
 <img src="https://michaelckearney.s3.amazonaws.com/assets/images/folder_example.jpeg" width="100%">
 
 
@@ -28,7 +25,6 @@ Tables are used for the storage and retrieval of data entries using cloud-based 
 ##### Settings
 - key - name of the item attribute used as the primary key to uniquely identify items in the table
 ##### Example
-<!-- ![Table Example](https://michaelckearney.s3.amazonaws.com/assets/images/table_example.jpeg) -->
 <img src="https://michaelckearney.s3.amazonaws.com/assets/images/table_example.jpeg" width="100%">
 
 
