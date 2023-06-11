@@ -6,7 +6,7 @@
 Babble is a lightweight desktop application for creating and managing fully serverless microservices on AWS. The only programming language you need to know is Python.  Babble uses a lightweight YAML-based framework that drastically improves the size and readability of your codebase while reducing the learning curve for cloud-based microservices development.  
 
 
-### <span style="height:1em;display:inline-flex;text-align:left;align-items:center;"><svg style="display:inline-flex;width:0;height:1em"><img height="24px" src="https://raw.githubusercontent.com/michaelckearney/babble/main/backend/resources/package/icon.svg"></svg>&ensp;&ensp;Package</span>
+### <span style="height:1em;display:inline-flex;text-align:left;align-items:center;"><svg style="display:inline-flex;width:0;height:1em"><img height="24px" src="https://github.com/michaelckearney/babble/blob/1235241c094423e14f3bbf4c662c491ad9f998c1/backend/resources/package/icon.svg"></svg>&ensp;&ensp;Package</span>
 Packages are used to install Python packages from pip. When deployed, this will be used to create a Lambda Layer that contains the specified dependencies.
 <details>
     <summary>
