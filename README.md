@@ -41,7 +41,7 @@ Folders are used to read and write files using cloud-based object storage.  When
     </ul>
 </details>
 
-### <span style="display:inline-block;font-size:1em;text-align:left;"><svg height="1em" width="1em"><image xlink:href="https://fonts.gstatic.com/s/i/short-term/release/materialsymbolsoutlined/table_chart/wght700/48px.svg?sanitize=true" height="1em" width="1em"></svg>&ensp;&ensp;Table</span>
+### <span style="display:inline-block;font-size:1em;text-align:left;"><svg height="1em" width="1em" fill="#FFFFFF"><image xlink:href="https://fonts.gstatic.com/s/i/short-term/release/materialsymbolsoutlined/table_chart/wght700/48px.svg?sanitize=true" height="1em" width="1em"></svg>&ensp;&ensp;Table</span>
 Tables are used for the storage and retrieval of data entries using cloud-based NoSQL databases.  When deployed, this will be used to create a DynamoDB table.
 <details>
     <summary>
