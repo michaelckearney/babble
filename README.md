@@ -1,10 +1,14 @@
+<head>
+   <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,700,0,0" />
+</head>
 # Babble
 
 Babble is a lightweight desktop application for creating and managing fully serverless microservices on AWS. The only programming language you need to know is Python.  Babble uses a lightweight YAML-based framework that drastically improves the size and readability of your codebase while reducing the learning curve for cloud-based microservices development.  
 
 ## Resources
 
-### Package
+
+### <span class="material-symbols-outlined">inventory_2</span>&ensp;&ensp;<span>Package</span>
 Packages are used to install Python packages from pip. When deployed, this will be used to create a Lambda Layer that contains the specified dependencies.
 <details>
     <summary>
@@ -24,7 +28,7 @@ Packages are used to install Python packages from pip. When deployed, this will 
     </ul>
 </details>
 
-### Folder
+### <span class="material-symbols-outlined">folder</span>&ensp;&ensp;<span>Folder</span>
 Folders are used to read and write files using cloud-based object storage.  When deployed, this will be used to create an S3 bucket.
 <details>
     <summary>
@@ -35,8 +39,7 @@ Folders are used to read and write files using cloud-based object storage.  When
     </ul>
 </details>
 
-
-### Table
+### <span class="material-symbols-outlined">table_chart</span>&ensp;&ensp;<span>Table</span>
 Tables are used for the storage and retrieval of data entries using cloud-based NoSQL databases.  When deployed, this will be used to create a DynamoDB table.
 <details>
     <summary>
@@ -56,7 +59,7 @@ Tables are used for the storage and retrieval of data entries using cloud-based 
 </details>
 
 
-### Library
+### <span class="material-symbols-outlined">library_books</span>&ensp;&ensp;<span>Library</span>
 Libraries are used to import modules from the Python Standard Library, as opposed to importing them in your code.  This exists to 
 <details>
     <summary>
@@ -76,7 +79,7 @@ Libraries are used to import modules from the Python Standard Library, as oppose
 </details>
 
 
-### Script
+### <span class="material-symbols-outlined">description</span>&ensp;&ensp;<span>Script</span>
 <details>
     <summary>
         <b>Settings</b>
@@ -95,7 +98,7 @@ Libraries are used to import modules from the Python Standard Library, as oppose
 </details>
 
 
-### Routine
+### <span class="material-symbols-outlined">calendar_month</span>&ensp;&ensp;<span>Routine</span>
 <details>
     <summary>
         <b>Settings</b>
@@ -114,7 +117,7 @@ Libraries are used to import modules from the Python Standard Library, as oppose
 </details>
 
 
-### Endpoint
+### <span class="material-symbols-outlined">cloud</span>&ensp;&ensp;<span>Endpoint</span>
 <details>
     <summary>
         <b>Settings</b>
