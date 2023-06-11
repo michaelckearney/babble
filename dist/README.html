@@ -1,0 +1,347 @@
+
+        <!DOCTYPE html>
+        <html>
+          <head>
+            <title>Read Me</title>
+            <meta charset="utf-8">
+            <meta name="viewport" content="width=device-width, initial-scale=1">
+            <style>
+            body {
+  font: 400 16px/1.5 'Helvetica Neue', Helvetica, Arial, sans-serif;
+  color: #111;
+  background-color: #fdfdfd;
+  -webkit-text-size-adjust: 100%;
+  -webkit-font-feature-settings: 'kern' 1;
+  -moz-font-feature-settings: 'kern' 1;
+  -o-font-feature-settings: 'kern' 1;
+  font-feature-settings: 'kern' 1;
+  font-kerning: normal;
+  padding: 30px;
+}
+
+@media only screen and (max-width: 600px) {
+  body {
+    padding: 5px;
+  }
+
+  main {
+    padding: 0px 20px 20px 20px !important;
+  }
+}
+
+main {
+  margin: 0px;
+  max-width: 900px;
+  border: 1px solid #e1e4e8;
+  padding: 10px 40px;
+  padding-bottom: 20px;
+  border-radius: 2px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+hr {
+  color: #bbb;
+  background-color: #bbb;
+  height: 1px;
+  flex: 0 1 auto;
+  margin: 1em 0;
+  padding: 0;
+  border: none;
+}
+
+/**
+ * Links
+ */
+a {
+  color: #0366d6;
+  text-decoration: none;
+}
+a:visited {
+  color: #0366d6;
+}
+a:hover {
+  color: #0366d6;
+  text-decoration: underline;
+}
+
+pre {
+  background-color: #f6f8fa;
+  border-radius: 3px;
+  font-size: 85%;
+  line-height: 1.45;
+  overflow: auto;
+  padding: 16px;
+}
+
+/**
+  * Code blocks
+  */
+
+code {
+  background-color: rgba(27, 31, 35, 0.05);
+  border-radius: 3px;
+  font-size: 85%;
+  margin: 0;
+  word-wrap: break-word;
+  padding: 0.2em 0.4em;
+  font-family: SFMono-Regular, Consolas, Liberation Mono, Menlo, Courier,
+    monospace;
+}
+
+pre > code {
+  background-color: transparent;
+  border: 0;
+  display: inline;
+  line-height: inherit;
+  margin: 0;
+  overflow: visible;
+  padding: 0;
+  word-wrap: normal;
+  font-size: 100%;
+}
+
+/**
+ * Blockquotes
+ */
+blockquote {
+  margin-left: 30px;
+  margin-top: 0px;
+  margin-bottom: 16px;
+  border-left-width: 3px;
+  padding: 0 1em;
+  color: #828282;
+  border-left: 4px solid #e8e8e8;
+  padding-left: 15px;
+  font-size: 18px;
+  letter-spacing: -1px;
+  font-style: italic;
+}
+blockquote * {
+  font-style: normal !important;
+  letter-spacing: 0;
+  color: #6a737d !important;
+}
+
+/**
+ * Tables
+ */
+table {
+  border-spacing: 2px;
+  display: block;
+  font-size: 14px;
+  overflow: auto;
+  width: 100%;
+  margin-bottom: 16px;
+  border-spacing: 0;
+  border-collapse: collapse;
+}
+
+td {
+  padding: 6px 13px;
+  border: 1px solid #dfe2e5;
+}
+
+th {
+  font-weight: 600;
+  padding: 6px 13px;
+  border: 1px solid #dfe2e5;
+}
+
+tr {
+  background-color: #fff;
+  border-top: 1px solid #c6cbd1;
+}
+
+table tr:nth-child(2n) {
+  background-color: #f6f8fa;
+}
+
+/**
+ * Others
+ */
+
+img {
+  max-width: 100%;
+}
+
+p {
+  line-height: 24px;
+  font-weight: 400;
+  font-size: 16px;
+  color: #24292e;
+}
+
+ul {
+  margin-top: 0;
+}
+
+li {
+  color: #24292e;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 1.5;
+}
+
+li + li {
+  margin-top: 0.25em;
+}
+
+body {
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Helvetica, Arial,
+    sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol';
+  color: #24292e;
+}
+
+a:visited {
+  color: #0366d6;
+}
+
+h1,
+h2,
+h3 {
+  border-bottom: 1px solid #eaecef;
+  color: #111;
+  /* Darker */
+}
+
+            </style>
+            <style>
+            pre code.hljs{display:block;overflow-x:auto;padding:1em}code.hljs{padding:3px 5px}/*!
+  Theme: GitHub
+  Description: Light theme as seen on github.com
+  Author: github.com
+  Maintainer: @Hirse
+  Updated: 2021-05-15
+
+  Outdated base version: https://github.com/primer/github-syntax-light
+  Current colors taken from GitHub's CSS
+*/.hljs{color:#24292e;background:#fff}.hljs-doctag,.hljs-keyword,.hljs-meta .hljs-keyword,.hljs-template-tag,.hljs-template-variable,.hljs-type,.hljs-variable.language_{color:#d73a49}.hljs-title,.hljs-title.class_,.hljs-title.class_.inherited__,.hljs-title.function_{color:#6f42c1}.hljs-attr,.hljs-attribute,.hljs-literal,.hljs-meta,.hljs-number,.hljs-operator,.hljs-selector-attr,.hljs-selector-class,.hljs-selector-id,.hljs-variable{color:#005cc5}.hljs-meta .hljs-string,.hljs-regexp,.hljs-string{color:#032f62}.hljs-built_in,.hljs-symbol{color:#e36209}.hljs-code,.hljs-comment,.hljs-formula{color:#6a737d}.hljs-name,.hljs-quote,.hljs-selector-pseudo,.hljs-selector-tag{color:#22863a}.hljs-subst{color:#24292e}.hljs-section{color:#005cc5;font-weight:700}.hljs-bullet{color:#735c0f}.hljs-emphasis{color:#24292e;font-style:italic}.hljs-strong{color:#24292e;font-weight:700}.hljs-addition{color:#22863a;background-color:#f0fff4}.hljs-deletion{color:#b31d28;background-color:#ffeef0}
+            </style>
+          </head>
+          <body>
+            <main>
+        <!-- <head>
+   <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,700,0,0" />
+</head> -->
+<h1 id="babble">Babble</h1>
+<p>Babble is a lightweight desktop application for creating and managing fully serverless microservices on AWS. The only programming language you need to know is Python.  Babble uses a lightweight YAML-based framework that drastically improves the size and readability of your codebase while reducing the learning curve for cloud-based microservices development.  </p>
+<h3 id="span-styleheight1emdisplayinline-flextext-alignleftalign-itemscentersvg-styledisplayinline-flexwidth0height1emimg-height24px-srchttpsgithubcommichaelckearneybabbleblob1235241c094423e14f3bbf4c662c491ad9f998c1backendresourcespackageiconsvgsvgenspensppackagespan"><span style="height:1em;display:inline-flex;text-align:left;align-items:center;"><svg style="display:inline-flex;width:0;height:1em"><img height="24px" src="https://github.com/michaelckearney/babble/blob/1235241c094423e14f3bbf4c662c491ad9f998c1/backend/resources/package/icon.svg"></svg>&ensp;&ensp;Package</span></h3>
+<p>Packages are used to install Python packages from pip. When deployed, this will be used to create a Lambda Layer that contains the specified dependencies.<br />
+<details>
+    <summary>
+        <b>Settings</b>
+    </summary>
+    <ul style="margin-top:0.5em">
+        <b>requirements</b> - a list of packages to install from pip, following the <a href="https://pip.pypa.io/en/stable/reference/requirements-file-format/">requirements.txt</a> format
+    </ul>
+</details><br />
+<details>
+    <summary>
+        <b>Example</b>
+    </summary>
+    <ul style="margin-top:0.5em">
+        <img src="https://michaelckearney.s3.amazonaws.com/assets/images/package_example1.jpeg" width="100%">
+        <img src="https://michaelckearney.s3.amazonaws.com/assets/images/package_example2.jpeg" width="100%">
+    </ul>
+</details></p>
+<h3 id="span-styleheight1emdisplayinline-flextext-alignleftalign-itemscentersvg-styledisplayinline-flexwidth0height1emimg-height24px-srchttpsgithubcommichaelckearneybabbleblob120dddb7417347121eaab9a046e14b1aa2c3fd2abackendresourcesfoldericonsvgsvgenspenspfolderspan"><span style="height:1em;display:inline-flex;text-align:left;align-items:center;"><svg style="display:inline-flex;width:0;height:1em"><img height="24px" src="https://github.com/michaelckearney/babble/blob/120dddb7417347121eaab9a046e14b1aa2c3fd2a/backend/resources/folder/icon.svg"></svg>&ensp;&ensp;Folder</span></h3>
+<p>Folders are used to read and write files using cloud-based object storage.  When deployed, this will be used to create an S3 bucket.<br />
+<details>
+    <summary>
+        <b>Example</b>
+    </summary>
+    <ul style="margin-top:0.5em">
+        <img src="https://michaelckearney.s3.amazonaws.com/assets/images/folder_example.jpeg" width="100%">
+    </ul>
+</details></p>
+<h3 id="span-styleheight1emdisplayinline-flextext-alignleftalign-itemscentersvg-styledisplayinline-flexwidth0height1emimg-height24px-srchttpsgithubcommichaelckearneybabbleblob120dddb7417347121eaab9a046e14b1aa2c3fd2abackendresourcestableiconsvgsvgenspensptablespan"><span style="height:1em;display:inline-flex;text-align:left;align-items:center;"><svg style="display:inline-flex;width:0;height:1em"><img height="24px" src="https://github.com/michaelckearney/babble/blob/120dddb7417347121eaab9a046e14b1aa2c3fd2a/backend/resources/table/icon.svg"></svg>&ensp;&ensp;Table</span></h3>
+<p>Tables are used for the storage and retrieval of data entries using cloud-based NoSQL databases.  When deployed, this will be used to create a DynamoDB table.<br />
+<details>
+    <summary>
+        <b>Settings</b>
+    </summary>
+    <ul style="margin-top:0.5em">
+        <b>key</b> - name of the item attribute used as the primary key to uniquely identify items in the table
+    </ul>
+</details><br />
+<details>
+    <summary>
+        <b>Example</b>
+    </summary>
+    <ul style="margin-top:0.5em">
+        <img src="https://michaelckearney.s3.amazonaws.com/assets/images/table_example.jpeg" width="100%">
+    </ul>
+</details></p>
+<h3 id="span-styleheight1emdisplayinline-flextext-alignleftalign-itemscentersvg-styledisplayinline-flexwidth0height1emimg-height24px-srchttpsgithubcommichaelckearneybabbleblob120dddb7417347121eaab9a046e14b1aa2c3fd2abackendresourceslibraryiconsvgsvgenspensplibraryspan"><span style="height:1em;display:inline-flex;text-align:left;align-items:center;"><svg style="display:inline-flex;width:0;height:1em"><img height="24px" src="https://github.com/michaelckearney/babble/blob/120dddb7417347121eaab9a046e14b1aa2c3fd2a/backend/resources/library/icon.svg"></svg>&ensp;&ensp;Library</span></h3>
+<p>Libraries are used to import modules from the Python Standard Library, as opposed to importing them in your code.  This exists to <br />
+<details>
+    <summary>
+        <b>Settings</b>
+    </summary>
+    <ul style="margin-top:0.5em">
+        <b>import</b> - what will be imported
+    </ul>
+</details><br />
+<details>
+    <summary>
+        <b>Example</b>
+    </summary>
+    <ul style="margin-top:0.5em">
+        <!-- <img src="https://michaelckearney.s3.amazonaws.com/assets/images/table_example.jpeg" width="100%"> -->
+    </ul>
+</details></p>
+<h3 id="span-styleheight1emdisplayinline-flextext-alignleftalign-itemscentersvg-styledisplayinline-flexwidth0height1emimg-height24px-srchttpsgithubcommichaelckearneybabbleblob120dddb7417347121eaab9a046e14b1aa2c3fd2abackendresourcesscripticonsvgsvgenspenspscriptspan"><span style="height:1em;display:inline-flex;text-align:left;align-items:center;"><svg style="display:inline-flex;width:0;height:1em"><img height="24px" src="https://github.com/michaelckearney/babble/blob/120dddb7417347121eaab9a046e14b1aa2c3fd2a/backend/resources/script/icon.svg"></svg>&ensp;&ensp;Script</span></h3>
+<p><details>
+    <summary>
+        <b>Settings</b>
+    </summary>
+    <ul style="margin-top:0.5em">
+        <b>setting</b> - description
+    </ul>
+</details><br />
+<details>
+    <summary>
+        <b>Example</b>
+    </summary>
+    <ul style="margin-top:0.5em">
+        <!-- <img src="url" width="100%"> -->
+    </ul>
+</details></p>
+<h3 id="span-styleheight1emdisplayinline-flextext-alignleftalign-itemscentersvg-styledisplayinline-flexwidth0height1emimg-height24px-srchttpsgithubcommichaelckearneybabbleblob120dddb7417347121eaab9a046e14b1aa2c3fd2abackendresourcesroutineiconsvgsvgenspensproutinespan"><span style="height:1em;display:inline-flex;text-align:left;align-items:center;"><svg style="display:inline-flex;width:0;height:1em"><img height="24px" src="https://github.com/michaelckearney/babble/blob/120dddb7417347121eaab9a046e14b1aa2c3fd2a/backend/resources/routine/icon.svg"></svg>&ensp;&ensp;Routine</span></h3>
+<p><details>
+    <summary>
+        <b>Settings</b>
+    </summary>
+    <ul style="margin-top:0.5em">
+        <b>setting</b> - description
+    </ul>
+</details><br />
+<details>
+    <summary>
+        <b>Example</b>
+    </summary>
+    <ul style="margin-top:0.5em">
+        <!-- <img src="url" width="100%"> -->
+    </ul>
+</details></p>
+<h3 id="span-styleheight1emdisplayinline-flextext-alignleftalign-itemscentersvg-styledisplayinline-flexwidth0height1emimg-height24px-srchttpsgithubcommichaelckearneybabbleblob120dddb7417347121eaab9a046e14b1aa2c3fd2abackendresourcesendpointiconsvgsvgenspenspendpointspan"><span style="height:1em;display:inline-flex;text-align:left;align-items:center;"><svg style="display:inline-flex;width:0;height:1em"><img height="24px" src="https://github.com/michaelckearney/babble/blob/120dddb7417347121eaab9a046e14b1aa2c3fd2a/backend/resources/endpoint/icon.svg"></svg>&ensp;&ensp;Endpoint</span></h3>
+<p><details>
+    <summary>
+        <b>Settings</b>
+    </summary>
+    <ul style="margin-top:0.5em">
+        <b>setting</b> - description
+    </ul>
+</details><br />
+<details>
+    <summary>
+        <b>Example</b>
+    </summary>
+    <ul style="margin-top:0.5em">
+        <!-- <img src="url" width="100%"> -->
+    </ul>
+</details></p>
+            </main>
+          </body>
+        </html>
