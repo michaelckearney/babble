@@ -13,7 +13,7 @@ Packages are used to install Python packages from pip. When deployed, this will 
         <b>Settings</b>
     </summary>
     <ul style="margin-top:0.5em">
-        <b>requirements</b> - a list of packages to install from pip, following the <a href="https://pip.pypa.io/en/stable/reference/requirements-file-format/">requirements.txt</a> format
+        <b>requirements</b> - a list of packages to install from pip, following the <a href="https://pip.pypa.io/en/stable/reference/requirements-file-format/" style="filter:invert(1)">requirements.txt</a> format
     </ul>
 </details>
 <details>
@@ -26,7 +26,7 @@ Packages are used to install Python packages from pip. When deployed, this will 
     </ul>
 </details>
 
-### <span style="height:1em;display:inline-flex;text-align:left;align-items:center;"><svg style="display:inline-flex;width:0;height:1em"><img height="24px" src="https://raw.githubusercontent.com/michaelckearney/babble/main/backend/resources/folder/icon.svg"></svg>&ensp;&ensp;Folder</span>
+### <span style="height:1em;display:inline-flex;text-align:left;align-items:center;"><svg style="display:inline-flex;width:0;height:1em"><img height="24px" src="https://raw.githubusercontent.com/michaelckearney/babble/main/backend/resources/folder/icon.svg" style="filter:invert(1)"></svg>&ensp;&ensp;Folder</span>
 Folders are used to read and write files using cloud-based object storage.  When deployed, this will be used to create an S3 bucket.
 <details>
     <summary>
@@ -37,7 +37,7 @@ Folders are used to read and write files using cloud-based object storage.  When
     </ul>
 </details>
 
-### <span style="height:1em;display:inline-flex;text-align:left;align-items:center;"><svg style="display:inline-flex;width:0;height:1em"><img height="24px" src="https://raw.githubusercontent.com/michaelckearney/babble/main/backend/resources/table/icon.svg"></svg>&ensp;&ensp;Table</span>
+### <span style="height:1em;display:inline-flex;text-align:left;align-items:center;"><svg style="display:inline-flex;width:0;height:1em"><img height="24px" src="https://raw.githubusercontent.com/michaelckearney/babble/main/backend/resources/table/icon.svg" style="filter:invert(1)"></svg>&ensp;&ensp;Table</span>
 Tables are used for the storage and retrieval of data entries using cloud-based NoSQL databases.  When deployed, this will be used to create a DynamoDB table.
 <details>
     <summary>
@@ -56,7 +56,7 @@ Tables are used for the storage and retrieval of data entries using cloud-based 
     </ul>
 </details>
 
-### <span style="height:1em;display:inline-flex;text-align:left;align-items:center;"><svg style="display:inline-flex;width:0;height:1em"><img height="24px" src="https://raw.githubusercontent.com/michaelckearney/babble/main/backend/resources/library/icon.svg"></svg>&ensp;&ensp;Library</span>
+### <span style="height:1em;display:inline-flex;text-align:left;align-items:center;"><svg style="display:inline-flex;width:0;height:1em"><img height="24px" src="https://raw.githubusercontent.com/michaelckearney/babble/main/backend/resources/library/icon.svg" style="filter:invert(1)"></svg>&ensp;&ensp;Library</span>
 Libraries are used to import modules from the Python Standard Library, as opposed to importing them in your code.  This exists to 
 <details>
     <summary>
@@ -75,7 +75,7 @@ Libraries are used to import modules from the Python Standard Library, as oppose
     </ul>
 </details>
 
-### <span style="height:1em;display:inline-flex;text-align:left;align-items:center;"><svg style="display:inline-flex;width:0;height:1em"><img height="24px" src="https://raw.githubusercontent.com/michaelckearney/babble/main/backend/resources/script/icon.svg"></svg>&ensp;&ensp;Script</span>
+### <span style="height:1em;display:inline-flex;text-align:left;align-items:center;"><svg style="display:inline-flex;width:0;height:1em"><img height="24px" src="https://raw.githubusercontent.com/michaelckearney/babble/main/backend/resources/script/icon.svg" style="filter:invert(1)"></svg>&ensp;&ensp;Script</span>
 <details>
     <summary>
         <b>Settings</b>
@@ -93,7 +93,7 @@ Libraries are used to import modules from the Python Standard Library, as oppose
     </ul>
 </details>
 
-### <span style="height:1em;display:inline-flex;text-align:left;align-items:center;"><svg style="display:inline-flex;width:0;height:1em"><img height="24px" src="https://raw.githubusercontent.com/michaelckearney/babble/main/backend/resources/routine/icon.svg"></svg>&ensp;&ensp;Routine</span>
+### <span style="height:1em;display:inline-flex;text-align:left;align-items:center;"><svg style="display:inline-flex;width:0;height:1em"><img height="24px" src="https://raw.githubusercontent.com/michaelckearney/babble/main/backend/resources/routine/icon.svg" style="filter:invert(1)"></svg>&ensp;&ensp;Routine</span>
 <details>
     <summary>
         <b>Settings</b>
@@ -112,7 +112,7 @@ Libraries are used to import modules from the Python Standard Library, as oppose
 </details>
 
 
-### <span style="height:1em;display:inline-flex;text-align:left;align-items:center;"><svg style="display:inline-flex;width:0;height:1em"><img height="24px" src="https://raw.githubusercontent.com/michaelckearney/babble/main/backend/resources/endpoint/icon.svg"></svg>&ensp;&ensp;Endpoint</span>
+### <span style="height:1em;display:inline-flex;text-align:left;align-items:center;"><svg style="display:inline-flex;width:0;height:1em"><img height="24px" src="https://raw.githubusercontent.com/michaelckearney/babble/main/backend/resources/endpoint/icon.svg" style="filter:invert(1)"></svg>&ensp;&ensp;Endpoint</span>
 <details>
     <summary>
         <b>Settings</b>
