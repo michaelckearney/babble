@@ -2,54 +2,132 @@
 
 Babble is a lightweight desktop application for creating and managing fully serverless microservices on AWS. The only programming language you need to know is Python.  Babble uses a lightweight YAML-based framework that drastically improves the size and readability of your codebase while reducing the learning curve for cloud-based microservices development.  
 
----
 ## Resources
 
----
-#### Package
+### Package
 Packages are used to install Python packages from pip. When deployed, this will be used to create a Lambda Layer that contains the specified dependencies.
-#### Settings
-- requirements - a list of packages to install from pip, following the [requirements.txt format](https://pip.pypa.io/en/stable/reference/requirements-file-format/)
-#### Example
-<img src="https://michaelckearney.s3.amazonaws.com/assets/images/package_example1.jpeg" width="100%">
-<img src="https://michaelckearney.s3.amazonaws.com/assets/images/package_example2.jpeg" width="100%">
-
+<details>
+    <summary>
+        <b>Settings</b>
+    </summary>
+    <ul style="margin-top:0.5em">
+        <b>requirements</b> - a list of packages to install from pip, following the <a href="https://pip.pypa.io/en/stable/reference/requirements-file-format/">requirements.txt</a> format
+    </ul>
+</details>
+<details>
+    <summary>
+        <b>Example</b>
+    </summary>
+    <ul style="margin-top:0.5em">
+        <img src="https://michaelckearney.s3.amazonaws.com/assets/images/package_example1.jpeg" width="100%">
+        <img src="https://michaelckearney.s3.amazonaws.com/assets/images/package_example2.jpeg" width="100%">
+    </ul>
+</details>
 
 ### Folder
 Folders are used to read and write files using cloud-based object storage.  When deployed, this will be used to create an S3 bucket.
-#### Example
+<details>
+    <summary>
+        <b>Example</b>
+    </summary>
+    <ul style="margin-top:0.5em">
+        <img src="https://michaelckearney.s3.amazonaws.com/assets/images/folder_example.jpeg" width="100%">
+    </ul>
+</details>
 
 
 ### Table
 Tables are used for the storage and retrieval of data entries using cloud-based NoSQL databases.  When deployed, this will be used to create a DynamoDB table.
-#### Settings
-- key - name of the item attribute used as the primary key to uniquely identify items in the table
-#### Example
+<details>
+    <summary>
+        <b>Settings</b>
+    </summary>
+    <ul style="margin-top:0.5em">
+        <b>key</b> - name of the item attribute used as the primary key to uniquely identify items in the table
+    </ul>
+</details>
+<details>
+    <summary>
+        <b>Example</b>
+    </summary>
+    <ul style="margin-top:0.5em">
+        <img src="https://michaelckearney.s3.amazonaws.com/assets/images/table_example.jpeg" width="100%">
+    </ul>
+</details>
 
 
 ### Library
 Libraries are used to import modules from the Python Standard Library, as opposed to importing them in your code.  This exists to 
-#### Settings
-- import - what will be imported
-#### Example
+<details>
+    <summary>
+        <b>Settings</b>
+    </summary>
+    <ul style="margin-top:0.5em">
+        <b>import</b> - what will be imported
+    </ul>
+</details>
+<details>
+    <summary>
+        <b>Example</b>
+    </summary>
+    <ul style="margin-top:0.5em">
+        <!-- <img src="https://michaelckearney.s3.amazonaws.com/assets/images/table_example.jpeg" width="100%"> -->
+    </ul>
+</details>
 
 
 ### Script
-#### Settings
-- content
-#### Example
+<details>
+    <summary>
+        <b>Settings</b>
+    </summary>
+    <ul style="margin-top:0.5em">
+        <b>setting</b> - description
+    </ul>
+</details>
+<details>
+    <summary>
+        <b>Example</b>
+    </summary>
+    <ul style="margin-top:0.5em">
+        <!-- <img src="url" width="100%"> -->
+    </ul>
+</details>
 
 
 ### Routine
-#### Settings
-- cron
-- content
-#### Example
+<details>
+    <summary>
+        <b>Settings</b>
+    </summary>
+    <ul style="margin-top:0.5em">
+        <b>setting</b> - description
+    </ul>
+</details>
+<details>
+    <summary>
+        <b>Example</b>
+    </summary>
+    <ul style="margin-top:0.5em">
+        <!-- <img src="url" width="100%"> -->
+    </ul>
+</details>
 
 
 ### Endpoint
-#### Settings
-- path
-- method
-- content
-#### Example
+<details>
+    <summary>
+        <b>Settings</b>
+    </summary>
+    <ul style="margin-top:0.5em">
+        <b>setting</b> - description
+    </ul>
+</details>
+<details>
+    <summary>
+        <b>Example</b>
+    </summary>
+    <ul style="margin-top:0.5em">
+        <!-- <img src="url" width="100%"> -->
+    </ul>
+</details>
