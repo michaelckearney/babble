@@ -1,8 +1,8 @@
 [
-    "account",
+    "package",
     "folder",
     "table",
-    "package",
+    "library",
     "script",
     "routine",
     "endpoint"

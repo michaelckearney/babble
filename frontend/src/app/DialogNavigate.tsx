@@ -17,7 +17,7 @@ import Drawer from '@mui/material/Drawer'
 import FolderOutlined from '@mui/icons-material/FolderOutlined'
 import DescriptionOutlined from '@mui/icons-material/DescriptionOutlined'
 
-import blue from '@mui/material/colors/blue'
+import purple from '@mui/material/colors/purple'
 import orange from '@mui/material/colors/orange'
 
 import Close from '@mui/icons-material/Close'
@@ -72,7 +72,7 @@ export const DialogNavigate = (props: DialogNavigateProps) => {
                                                 props.state.NavigateParent()
                                             }}>
                                                 <ListItemIcon>
-                                                    <FolderOutlined sx={{color: blue[500]}} />
+                                                    <FolderOutlined sx={{color: purple[500]}} />
                                                 </ListItemIcon>
                                                 <ListItemText primary=".." sx={{margin: 0}} />
                                             </ListItemButton>
@@ -85,7 +85,7 @@ export const DialogNavigate = (props: DialogNavigateProps) => {
                                             props.state.NavigateChild(folder)
                                         }}>
                                             <ListItemIcon>
-                                                <FolderOutlined sx={{color: blue[500]}} />
+                                                <FolderOutlined sx={{color: purple[500]}} />
                                             </ListItemIcon>
                                             <ListItemText primary={folder} sx={{margin: 0}} />
                                         </ListItemButton>

@@ -238,6 +238,9 @@ func GetTerraformAws(config string, credentials []PresetProviderCredential) map[
 				if k1 != name && v1.Resource != "package" {
 					if v1.Resource == "script" || v1.Resource == "routine" || v1.Resource == "endpoint" {
 						resource_script += "import _" + hash(k1) + " as " + k1 + "\n"
+					} else if v1.Resource == "library" {
+						resource_script += "import " + v1.Settings["import"].(string) + " as " + k1 + "\n"
+
 					} else {
 						resource_script += "import _" + hash(k1) + "\n"
 						resource_script += k1 + " = _" + hash(k1) + ".Module()\n"
