@@ -1,6 +1,8 @@
 # Babble
 
-Babble is a lightweight desktop application for creating and managing fully serverless microservices on AWS. The only programming language you need to know is Python.  Babble uses a lightweight YAML-based framework that drastically improves the size and readability of your codebase while reducing the learning curve for backend development.  
+Babble is a lightweight desktop application for creating and managing fully serverless microservices on AWS. The only programming language you need to know is Python.  Babble uses a lightweight YAML-based framework that drastically improves the size and readability of your codebase while reducing the learning curve for backend development.  Its responsive user interface with integrated code editors improve the efficiency of your development process.  Babble is designed to be used by developers of all skill levels, from beginners to experts.
+
+<img src="https://michaelckearney.s3.amazonaws.com/assets/images/homepage_screenshot.jpeg" width="100%">
 
 # Resources
 
@@ -26,7 +28,7 @@ Packages are used to install Python packages from pip. When you activate a servi
         <img src="https://michaelckearney.s3.amazonaws.com/assets/images/package_example2.jpeg" width="100%">
     </ul>
 </details>
-<br />
+<br /><br />
 
 ## <span style="height:1em;display:inline-flex;text-align:left;align-items:center;"><img height="24px" width="24px" src="https://raw.githubusercontent.com/michaelckearney/babble/120dddb7417347121eaab9a046e14b1aa2c3fd2a/backend/resources/folder/icon.svg">&ensp;Folder</span>
 Folders are used to read and write files using cloud-based object storage.  When deployed, this will be used to create an S3 bucket.  The necessary client code will be added to the Lambda function and all necessary imports will be automatically generated.  No need for connection strings or credentials.
@@ -89,7 +91,7 @@ Libraries are used to import modules from the Python Standard Library, as oppose
         <b>Example</b>
     </summary>
     <ul>
-        <!-- <img src="url" width="100%"> -->
+        <img src="https://michaelckearney.s3.amazonaws.com/assets/images/library_example.jpeg" width="100%">
     </ul>
 </details>
 <br />
@@ -112,12 +114,19 @@ Scripts are where the bulk of your Python code will be.  It is recommended that 
         <b>Example</b>
     </summary>
     <ul>
-        <!-- <img src="url" width="100%"> -->
+        <img src="https://michaelckearney.s3.amazonaws.com/assets/images/script_example1.jpeg" width="100%">
+    </ul>
+    <ul>
+        <img src="https://michaelckearney.s3.amazonaws.com/assets/images/script_example2.jpeg" width="100%">
+    </ul>
+    <ul>
+        <img src="https://michaelckearney.s3.amazonaws.com/assets/images/script_example3.jpeg" width="100%">
     </ul>
 </details>
 <br />
 
 ## <span style="height:1em;display:inline-flex;text-align:left;align-items:center;"><img height="24px" width="24px" src="https://raw.githubusercontent.com/michaelckearney/babble/120dddb7417347121eaab9a046e14b1aa2c3fd2a/backend/resources/routine/icon.svg">&ensp;Routine</span>
+Routines are used to schedule the execution of your Python code.  When activated, this will be used to create a CloudWatch Event Rule that invokes your Lambda Function at the interval specified.
 <details>
     <summary>
         <b>Settings</b>
@@ -146,12 +155,13 @@ Scripts are where the bulk of your Python code will be.  It is recommended that 
         <b>Example</b>
     </summary>
     <ul>
-        <!-- <img src="url" width="100%"> -->
+        <img src="https://michaelckearney.s3.amazonaws.com/assets/images/routine_example.jpeg" width="100%">
     </ul>
 </details>
 <br />
 
 ## <span style="height:1em;display:inline-flex;text-align:left;align-items:center;"><img height="24px" width="24px" src="https://raw.githubusercontent.com/michaelckearney/babble/120dddb7417347121eaab9a046e14b1aa2c3fd2a/backend/resources/endpoint/icon.svg">&ensp;Endpoint</span>
+Endpoints are used to define your API output.  When activated, this will be used to create API Gateway REST API endpoints that will invoke your Lambda Function.
 <details>
     <summary>
         <b>Settings</b>
@@ -189,7 +199,10 @@ Scripts are where the bulk of your Python code will be.  It is recommended that 
         <b>Example</b>
     </summary>
     <ul>
-        <!-- <img src="url" width="100%"> -->
+        <img src="https://michaelckearney.s3.amazonaws.com/assets/images/endpoint_example1.jpeg" width="100%">
+    </ul>
+    <ul>
+        <img src="https://michaelckearney.s3.amazonaws.com/assets/images/endpoint_example2.jpeg" width="100%">
     </ul>
 </details>
 <br />
