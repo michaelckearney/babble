@@ -5,7 +5,7 @@ Babble is a lightweight desktop application for creating and managing fully serv
 # Resources
 
 ## <span style="height:1em;display:inline-flex;text-align:left;align-items:center;"><img height="24px" width="24px" src="https://raw.githubusercontent.com/michaelckearney/babble/1235241c094423e14f3bbf4c662c491ad9f998c1/backend/resources/package/icon.svg">&ensp;Package</span>
-Packages are used to install Python packages from pip. When deployed, this will be used to create a Lambda Layer containing the specified packages.
+Packages are used to install Python packages from pip. When deployed, this will be used to create a Lambda Layer containing the specified packages.  The necessary imports will be automatically added to the Lambda Function source code.
 <details>
     <summary>
         <b>Settings</b>
@@ -13,7 +13,7 @@ Packages are used to install Python packages from pip. When deployed, this will 
     <ul>
         <b>name</b> - a list of packages to install from pip, following the  format
     </ul>
-    <ul style="margin-top:-1em;">
+    <ul>
         <b>requirements</b> - a list of packages to install from pip, following the <a href="https://pip.pypa.io/en/stable/reference/requirements-file-format/">requirements.txt</a> format
     </ul>
 </details>
@@ -21,7 +21,7 @@ Packages are used to install Python packages from pip. When deployed, this will 
     <summary>
         <b>Example</b>
     </summary>
-    <ul style="margin-top:0.5em">
+    <ul>
         <img src="https://michaelckearney.s3.amazonaws.com/assets/images/package_example1.jpeg" width="100%">
         <img src="https://michaelckearney.s3.amazonaws.com/assets/images/package_example2.jpeg" width="100%">
     </ul>
@@ -33,7 +33,7 @@ Folders are used to read and write files using cloud-based object storage.  When
     <summary>
         <b>Example</b>
     </summary>
-    <ul style="margin-top:0.5em">
+    <ul>
         <img src="https://michaelckearney.s3.amazonaws.com/assets/images/folder_example.jpeg" width="100%">
     </ul>
 </details>
@@ -44,7 +44,7 @@ Tables are used for the storage and retrieval of data entries using cloud-based 
     <summary>
         <b>Settings</b>
     </summary>
-    <ul style="margin-top:0.5em">
+    <ul>
         <b>key</b> - name of the item attribute used as the primary key to uniquely identify items in the table
     </ul>
 </details>
@@ -52,7 +52,7 @@ Tables are used for the storage and retrieval of data entries using cloud-based 
     <summary>
         <b>Example</b>
     </summary>
-    <ul style="margin-top:0.5em">
+    <ul>
         <img src="https://michaelckearney.s3.amazonaws.com/assets/images/table_example.jpeg" width="100%">
     </ul>
 </details>
@@ -63,7 +63,7 @@ Libraries are used to import modules from the Python Standard Library, as oppose
     <summary>
         <b>Settings</b>
     </summary>
-    <ul style="margin-top:0.5em">
+    <ul>
         <b>import</b> - what will be imported
     </ul>
 </details>
@@ -71,7 +71,7 @@ Libraries are used to import modules from the Python Standard Library, as oppose
     <summary>
         <b>Example</b>
     </summary>
-    <ul style="margin-top:0.5em">
+    <ul>
         <!-- <img src="url" width="100%"> -->
     </ul>
 </details>
@@ -81,7 +81,7 @@ Libraries are used to import modules from the Python Standard Library, as oppose
     <summary>
         <b>Settings</b>
     </summary>
-    <ul style="margin-top:0.5em">
+    <ul>
         <b>setting</b> - description
     </ul>
 </details>
@@ -89,7 +89,7 @@ Libraries are used to import modules from the Python Standard Library, as oppose
     <summary>
         <b>Example</b>
     </summary>
-    <ul style="margin-top:0.5em">
+    <ul>
         <!-- <img src="url" width="100%"> -->
     </ul>
 </details>
