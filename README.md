@@ -5,12 +5,15 @@ Babble is a lightweight desktop application for creating and managing fully serv
 # Resources
 
 ## <span style="height:1em;display:inline-flex;text-align:left;align-items:center;"><img height="24px" width="24px" src="https://raw.githubusercontent.com/michaelckearney/babble/1235241c094423e14f3bbf4c662c491ad9f998c1/backend/resources/package/icon.svg">&ensp;Package</span>
-Packages are used to install Python packages from pip. When deployed, this will be used to create a Lambda Layer that contains the specified dependencies.
+Packages are used to install Python packages from pip. When deployed, this will be used to create a Lambda Layer containing the specified packages.
 <details>
     <summary>
         <b>Settings</b>
     </summary>
-    <ul style="margin-top:0.5em">
+    <ul>
+        <b>name</b> - a list of packages to install from pip, following the  format
+    </ul>
+    <ul>
         <b>requirements</b> - a list of packages to install from pip, following the <a href="https://pip.pypa.io/en/stable/reference/requirements-file-format/">requirements.txt</a> format
     </ul>
 </details>
@@ -55,7 +58,7 @@ Tables are used for the storage and retrieval of data entries using cloud-based 
 </details>
 
 ## <span style="height:1em;display:inline-flex;text-align:left;align-items:center;"><img height="24px" width="24px" src="https://raw.githubusercontent.com/michaelckearney/babble/120dddb7417347121eaab9a046e14b1aa2c3fd2a/backend/resources/library/icon.svg">&ensp;Library</span>
-Libraries are used to import modules from the Python Standard Library, as opposed to importing them in your code.  This exists to 
+Libraries are used to import modules from the Python Standard Library, as opposed to importing them in your code.  This exists to replace import statements and prevent naming conflicts between imported libraries and your resources.  The necessary imports will be automatically added to the Lambda Function source code.
 <details>
     <summary>
         <b>Settings</b>
@@ -69,7 +72,7 @@ Libraries are used to import modules from the Python Standard Library, as oppose
         <b>Example</b>
     </summary>
     <ul style="margin-top:0.5em">
-        <!-- <img src="https://michaelckearney.s3.amazonaws.com/assets/images/table_example.jpeg" width="100%"> -->
+        <!-- <img src="url" width="100%"> -->
     </ul>
 </details>
 
