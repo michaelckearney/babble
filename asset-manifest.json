@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/babble/static/css/main.073c9b0a.css",
-    "main.js": "/babble/static/js/main.b97ad628.js",
+    "main.js": "/babble/static/js/main.f314e01f.js",
     "static/js/787.5c39024c.chunk.js": "/babble/static/js/787.5c39024c.chunk.js",
     "static/media/linux.svg": "/babble/static/media/linux.120cb2ac92d17333a5993b607756bd97.svg",
     "static/media/github.svg": "/babble/static/media/github.97ed8e7eef60d61ca469881dd6f34511.svg",
@@ -10,11 +10,11 @@
     "index.html": "/babble/index.html",
     "static/media/windows.svg": "/babble/static/media/windows.24cee601200bbfe9b313109e0029b6cc.svg",
     "main.073c9b0a.css.map": "/babble/static/css/main.073c9b0a.css.map",
-    "main.b97ad628.js.map": "/babble/static/js/main.b97ad628.js.map",
+    "main.f314e01f.js.map": "/babble/static/js/main.f314e01f.js.map",
     "787.5c39024c.chunk.js.map": "/babble/static/js/787.5c39024c.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.073c9b0a.css",
-    "static/js/main.b97ad628.js"
+    "static/js/main.f314e01f.js"
   ]
 }
