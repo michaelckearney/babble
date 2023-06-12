@@ -13,7 +13,7 @@ Packages are used to install Python packages from pip. When deployed, this will 
     <ul>
         <b>name</b> - a list of packages to install from pip, following the  format
     </ul>
-    <ul>
+    <ul style="margin-top:-1em;">
         <b>requirements</b> - a list of packages to install from pip, following the <a href="https://pip.pypa.io/en/stable/reference/requirements-file-format/">requirements.txt</a> format
     </ul>
 </details>
