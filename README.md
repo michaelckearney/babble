@@ -2,9 +2,9 @@
 
 Babble is a lightweight desktop application for creating and managing fully serverless microservices on AWS. The only programming language you need to know is Python.  Babble uses a lightweight YAML-based framework that drastically improves the size and readability of your codebase while reducing the learning curve for cloud-based microservices development.  
 
-## Resources
+# Resources
 
-### <span style="height:1em;display:inline-flex;text-align:left;align-items:center;"><svg style="display:inline-flex;width:0;height:1em"><img height="24px" src="https://raw.githubusercontent.com/michaelckearney/babble/1235241c094423e14f3bbf4c662c491ad9f998c1/backend/resources/package/icon.svg"></svg>&ensp;&ensp;Package</span>
+## <span style="height:1em;display:inline-flex;text-align:left;align-items:center;"><svg style="display:inline-flex;width:0;height:1em"><img height="24px" src="https://raw.githubusercontent.com/michaelckearney/babble/1235241c094423e14f3bbf4c662c491ad9f998c1/backend/resources/package/icon.svg"></svg>&ensp;&ensp;Package</span>
 Packages are used to install Python packages from pip. When deployed, this will be used to create a Lambda Layer that contains the specified dependencies.
 <details>
     <summary>
@@ -24,7 +24,7 @@ Packages are used to install Python packages from pip. When deployed, this will 
     </ul>
 </details>
 
-### <span style="height:1em;display:inline-flex;text-align:left;align-items:center;"><svg style="display:inline-flex;width:0;height:1em"><img height="24px" src="https://raw.githubusercontent.com/michaelckearney/babble/120dddb7417347121eaab9a046e14b1aa2c3fd2a/backend/resources/folder/icon.svg"></svg>&ensp;&ensp;Folder</span>
+## <span style="height:1em;display:inline-flex;text-align:left;align-items:center;"><svg style="display:inline-flex;width:0;height:1em"><img height="24px" src="https://raw.githubusercontent.com/michaelckearney/babble/120dddb7417347121eaab9a046e14b1aa2c3fd2a/backend/resources/folder/icon.svg"></svg>&ensp;&ensp;Folder</span>
 Folders are used to read and write files using cloud-based object storage.  When deployed, this will be used to create an S3 bucket.
 <details>
     <summary>
@@ -35,7 +35,7 @@ Folders are used to read and write files using cloud-based object storage.  When
     </ul>
 </details>
 
-### <span style="height:1em;display:inline-flex;text-align:left;align-items:center;"><svg style="display:inline-flex;width:0;height:1em"><img height="24px" src="https://raw.githubusercontent.com/michaelckearney/babble/120dddb7417347121eaab9a046e14b1aa2c3fd2a/backend/resources/table/icon.svg"></svg>&ensp;&ensp;Table</span>
+## <span style="height:1em;display:inline-flex;text-align:left;align-items:center;"><svg style="display:inline-flex;width:0;height:1em"><img height="24px" src="https://raw.githubusercontent.com/michaelckearney/babble/120dddb7417347121eaab9a046e14b1aa2c3fd2a/backend/resources/table/icon.svg"></svg>&ensp;&ensp;Table</span>
 Tables are used for the storage and retrieval of data entries using cloud-based NoSQL databases.  When deployed, this will be used to create a DynamoDB table.
 <details>
     <summary>
@@ -54,7 +54,7 @@ Tables are used for the storage and retrieval of data entries using cloud-based 
     </ul>
 </details>
 
-### <span style="height:1em;display:inline-flex;text-align:left;align-items:center;"><svg style="display:inline-flex;width:0;height:1em"><img height="24px" src="https://raw.githubusercontent.com/michaelckearney/babble/120dddb7417347121eaab9a046e14b1aa2c3fd2a/backend/resources/library/icon.svg"></svg>&ensp;&ensp;Library</span>
+## <span style="height:1em;display:inline-flex;text-align:left;align-items:center;"><svg style="display:inline-flex;width:0;height:1em"><img height="24px" src="https://raw.githubusercontent.com/michaelckearney/babble/120dddb7417347121eaab9a046e14b1aa2c3fd2a/backend/resources/library/icon.svg"></svg>&ensp;&ensp;Library</span>
 Libraries are used to import modules from the Python Standard Library, as opposed to importing them in your code.  This exists to 
 <details>
     <summary>
@@ -73,7 +73,7 @@ Libraries are used to import modules from the Python Standard Library, as oppose
     </ul>
 </details>
 
-### <span style="height:1em;display:inline-flex;text-align:left;align-items:center;"><svg style="display:inline-flex;width:0;height:1em"><img height="24px" src="https://raw.githubusercontent.com/michaelckearney/babble/120dddb7417347121eaab9a046e14b1aa2c3fd2a/backend/resources/script/icon.svg"></svg>&ensp;&ensp;Script</span>
+## <span style="height:1em;display:inline-flex;text-align:left;align-items:center;"><svg style="display:inline-flex;width:0;height:1em"><img height="24px" src="https://raw.githubusercontent.com/michaelckearney/babble/120dddb7417347121eaab9a046e14b1aa2c3fd2a/backend/resources/script/icon.svg"></svg>&ensp;&ensp;Script</span>
 <details>
     <summary>
         <b>Settings</b>
@@ -91,7 +91,7 @@ Libraries are used to import modules from the Python Standard Library, as oppose
     </ul>
 </details>
 
-### <span style="height:1em;display:inline-flex;text-align:left;align-items:center;"><svg style="display:inline-flex;width:0;height:1em"><img height="24px" src="https://raw.githubusercontent.com/michaelckearney/babble/120dddb7417347121eaab9a046e14b1aa2c3fd2a/backend/resources/routine/icon.svg"></svg>&ensp;&ensp;Routine</span>
+## <span style="height:1em;display:inline-flex;text-align:left;align-items:center;"><svg style="display:inline-flex;width:0;height:1em"><img height="24px" src="https://raw.githubusercontent.com/michaelckearney/babble/120dddb7417347121eaab9a046e14b1aa2c3fd2a/backend/resources/routine/icon.svg"></svg>&ensp;&ensp;Routine</span>
 <details>
     <summary>
         <b>Settings</b>
@@ -110,7 +110,7 @@ Libraries are used to import modules from the Python Standard Library, as oppose
 </details>
 
 
-### <span style="height:1em;display:inline-flex;text-align:left;align-items:center;"><svg style="display:inline-flex;width:0;height:1em"><img height="24px" src="https://raw.githubusercontent.com/michaelckearney/babble/120dddb7417347121eaab9a046e14b1aa2c3fd2a/backend/resources/endpoint/icon.svg"></svg>&ensp;&ensp;Endpoint</span>
+## <span style="height:1em;display:inline-flex;text-align:left;align-items:center;"><svg style="display:inline-flex;width:0;height:1em"><img height="24px" src="https://raw.githubusercontent.com/michaelckearney/babble/120dddb7417347121eaab9a046e14b1aa2c3fd2a/backend/resources/endpoint/icon.svg"></svg>&ensp;&ensp;Endpoint</span>
 <details>
     <summary>
         <b>Settings</b>
