@@ -110,7 +110,7 @@ Libraries are used to import modules from the Python Standard Library, as oppose
 </details>
 
 
-## <span style="height:1em;display:inline-flex;text-align:left;align-items:center;"><svg style="display:inline-flex;width:0;height:1em"><img height="24px" src="https://raw.githubusercontent.com/michaelckearney/babble/120dddb7417347121eaab9a046e14b1aa2c3fd2a/backend/resources/endpoint/icon.svg"></svg>&ensp;&ensp;Endpoint</span>
+## <span style="height:1em;display:inline-flex;text-align:left;align-items:center;"><img height="24px" width="24px" src="https://raw.githubusercontent.com/michaelckearney/babble/120dddb7417347121eaab9a046e14b1aa2c3fd2a/backend/resources/endpoint/icon.svg">&ensp;&ensp;Endpoint</span>
 <details>
     <summary>
         <b>Settings</b>
