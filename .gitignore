@@ -3,4 +3,3 @@ node_modules
 frontend/dist
 terraform
 .DS_Store
-build

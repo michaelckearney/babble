@@ -143,9 +143,9 @@ Routines are used to schedule the execution of your Python code.  When activated
     <ul>
         <pre>
             <code>
-            {
-                'cron': string containing your specified schedule
-            }
+{
+    'cron': string containing your specified schedule
+}
             </code>
         </pre>
     </ul>
@@ -181,15 +181,15 @@ Endpoints are used to define your API output.  When activated, this will be used
     <ul>
         <pre>
             <code>
-            {
-                'path': string containing the raw path of the API request (e.g. "/users/123")
-                'method': string containing your specified method (e.g. "GET")
-                'resource': string containing your specified path (e.g. "/users/{id}")
-                'pathParameters': dictionary containing the path parameters of the API request (e.g. {'id': 123})
-                'headers': dictionary containing the headers of the API request
-                'queryStringParameters': dictionary containing the query string parameters of the API request
-                'body': string containing the body of the API request
-            }
+{
+    'path': string containing the raw path of the API request (e.g. "/users/123")
+    'method': string containing your specified method (e.g. "GET")
+    'resource': string containing your specified path (e.g. "/users/{id}")
+    'pathParameters': dictionary containing the path parameters of the API request (e.g. {'id': 123})
+    'headers': dictionary containing the headers of the API request
+    'queryStringParameters': dictionary containing the query string parameters of the API request
+    'body': string containing the body of the API request
+}
             </code>
         </pre>
     </ul>
