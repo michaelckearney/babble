@@ -26,6 +26,7 @@ Packages are used to install Python packages from pip. When you activate a servi
         <img src="https://michaelckearney.s3.amazonaws.com/assets/images/package_example2.jpeg" width="100%">
     </ul>
 </details>
+<br />
 
 ## <span style="height:1em;display:inline-flex;text-align:left;align-items:center;"><img height="24px" width="24px" src="https://raw.githubusercontent.com/michaelckearney/babble/120dddb7417347121eaab9a046e14b1aa2c3fd2a/backend/resources/folder/icon.svg">&ensp;Folder</span>
 Folders are used to read and write files using cloud-based object storage.  When deployed, this will be used to create an S3 bucket.  The necessary client code will be added to the Lambda function and all necessary imports will be automatically generated.  No need for connection strings or credentials.
@@ -45,6 +46,7 @@ Folders are used to read and write files using cloud-based object storage.  When
         <img src="https://michaelckearney.s3.amazonaws.com/assets/images/folder_example.jpeg" width="100%">
     </ul>
 </details>
+<br />
 
 ## <span style="height:1em;display:inline-flex;text-align:left;align-items:center;"><img height="24px" width="24px" src="https://raw.githubusercontent.com/michaelckearney/babble/120dddb7417347121eaab9a046e14b1aa2c3fd2a/backend/resources/table/icon.svg">&ensp;Table</span>
 Tables are used for the storage and retrieval of data entries using cloud-based NoSQL databases.  When deployed, this will be used to create a DynamoDB table.  The necessary client code will be added to the Lambda function and all necessary imports will be automatically generated.  No need for connection strings or credentials.
@@ -67,6 +69,7 @@ Tables are used for the storage and retrieval of data entries using cloud-based 
         <img src="https://michaelckearney.s3.amazonaws.com/assets/images/table_example.jpeg" width="100%">
     </ul>
 </details>
+<br />
 
 ## <span style="height:1em;display:inline-flex;text-align:left;align-items:center;"><img height="24px" width="24px" src="https://raw.githubusercontent.com/michaelckearney/babble/120dddb7417347121eaab9a046e14b1aa2c3fd2a/backend/resources/library/icon.svg">&ensp;Library</span>
 Libraries are used to import modules from the Python Standard Library, as opposed to adding import statements your code.  This exists to replace import statements and prevent naming conflicts between imported libraries and your resources.  The necessary imports will be automatically added to the Lambda Function source code.
@@ -89,6 +92,7 @@ Libraries are used to import modules from the Python Standard Library, as oppose
         <!-- <img src="url" width="100%"> -->
     </ul>
 </details>
+<br />
 
 ## <span style="height:1em;display:inline-flex;text-align:left;align-items:center;"><img height="24px" width="24px" src="https://raw.githubusercontent.com/michaelckearney/babble/120dddb7417347121eaab9a046e14b1aa2c3fd2a/backend/resources/script/icon.svg">&ensp;Script</span>
 Scripts are where the bulk of your Python code will be.  It is recommended that you define your functions and classes here and reference them from your endpoints and routines.  This code will be automatically integrated into your Lambda Function.
@@ -111,6 +115,7 @@ Scripts are where the bulk of your Python code will be.  It is recommended that 
         <!-- <img src="url" width="100%"> -->
     </ul>
 </details>
+<br />
 
 ## <span style="height:1em;display:inline-flex;text-align:left;align-items:center;"><img height="24px" width="24px" src="https://raw.githubusercontent.com/michaelckearney/babble/120dddb7417347121eaab9a046e14b1aa2c3fd2a/backend/resources/routine/icon.svg">&ensp;Routine</span>
 <details>
@@ -144,7 +149,7 @@ Scripts are where the bulk of your Python code will be.  It is recommended that 
         <!-- <img src="url" width="100%"> -->
     </ul>
 </details>
-
+<br />
 
 ## <span style="height:1em;display:inline-flex;text-align:left;align-items:center;"><img height="24px" width="24px" src="https://raw.githubusercontent.com/michaelckearney/babble/120dddb7417347121eaab9a046e14b1aa2c3fd2a/backend/resources/endpoint/icon.svg">&ensp;Endpoint</span>
 <details>
@@ -187,3 +192,4 @@ Scripts are where the bulk of your Python code will be.  It is recommended that 
         <!-- <img src="url" width="100%"> -->
     </ul>
 </details>
+<br />
