@@ -124,7 +124,7 @@ Scripts are where the bulk of your Python code will be.  It is recommended that 
         <b>schedule</b> - A cron-formatted line of text that specifies the schedule on which your routine will be invoked.  For help generating cron statements, go <a href="http://www.cronmaker.com/?1">here</a>. 
     </ul>
     <ul>
-        <b>content</b> - The Python source code of your routine.  This will be automatically integrated into your Lambda Function.  It must contain the function<code>handler(event)</code>which will be invoked continuously according to your<code>schedule`.  The<code>event</code>parameter is a Python dictionary variable structured as shown below:
+        <b>content</b> - The Python source code of your routine.  This will be automatically integrated into your Lambda Function.  It must contain the function<code>handler(event)</code>which will be invoked continuously according to your <code>schedule</code>.  The <code>event</code> parameter is a Python dictionary variable structured as shown below:
     </ul>
     <ul>
         <pre>
@@ -158,10 +158,10 @@ Scripts are where the bulk of your Python code will be.  It is recommended that 
         <b>path</b> - The path that will be used to invoke your endpoint.  This will be appended to the base URL of your API.
     </ul>
     <ul>
-        <b>method</b> - The HTTP method that will be used to invoke your endpoint.  This can be any of the following:<code>GET`,<code>POST`,<code>PUT`,<code>DELETE`.
+        <b>method</b> - The HTTP method that will be used to invoke your endpoint.  This can be any of the following: <code>GET</code>, <code>POST</code>, <code>PUT</code>, <code>DELETE</code>.
     </ul>
     <ul>
-        <b>content</b> - The Python source code of your endpoint.  This will be automatically integrated into your Lambda Function.  It must contain the function<code>handler(event)</code>which will be invoked when an API request is made that matches your specified<code>path</code>and<code>method`.  The<code>event</code>parameter is a Python dictionary variable structured as shown below:
+        <b>content</b> - The Python source code of your endpoint.  This will be automatically integrated into your Lambda Function.  It must contain the function <code>handler(event)</code> which will be invoked when an API request is made that matches your specified <code>path</code> and <code>method</code>.  The <code>event</code> parameter is a Python dictionary variable structured as shown below:
     </ul>
     <ul>
         <pre>
