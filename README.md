@@ -135,7 +135,7 @@ Routines are used to schedule the execution of your Python code.  When activated
         <b>name</b> - The name that can be used to reference the routine from your code.
     </ul>
     <ul>
-        <b>schedule</b> - A cron-formatted line of text that specifies the schedule on which your routine will be invoked.  For help generating cron statements, go <a href="http://www.cronmaker.com/?1">here</a>. 
+        <b>cron</b> - A cron-formatted line of text that specifies the schedule on which your routine will be invoked.  For help generating cron statements, go <a href="http://www.cronmaker.com/?1">here</a>. 
     </ul>
     <ul>
         <b>content</b> - The Python source code of your routine.  This will be automatically integrated into your Lambda Function.  It must contain the function "handler(event)" which will be invoked continuously according to your "schedule".  The "event" parameter is a Python dictionary variable structured as shown below:

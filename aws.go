@@ -31,6 +31,17 @@ func GetTerraformAws(config string, credentials []PresetProviderCredential) map[
 	if err != nil {
 		c = map[string]ServiceConfig{}
 	}
+	for name, resource := range c {
+		if resource.Settings == nil {
+			resource.Settings = map[string]interface{}{}
+			c[name] = resource
+		}
+		for title, setting := range resource.Settings {
+			if setting == nil {
+				c[name].Settings[title] = ""
+			}
+		}
+	}
 
 	// GENERATING MAIN.TF
 
@@ -240,7 +251,6 @@ func GetTerraformAws(config string, credentials []PresetProviderCredential) map[
 						resource_script += "import _" + hash(k1) + " as " + k1 + "\n"
 					} else if v1.Resource == "library" {
 						resource_script += "import " + v1.Settings["import"].(string) + " as " + k1 + "\n"
-
 					} else {
 						resource_script += "import _" + hash(k1) + "\n"
 						resource_script += k1 + " = _" + hash(k1) + ".Module()\n"
