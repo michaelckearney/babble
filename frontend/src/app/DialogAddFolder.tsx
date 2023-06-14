@@ -21,7 +21,7 @@ export const DialogAddFolder = (props: DialogAddFolderProps) => {
     return (
         <Dialog open={props.state.state.dialog === "addFolder"}>
             <DialogContent sx={{padding: 0}}>
-                <Box height="7em" width="20em">
+                <Box height="4em" width="20em">
                     <Box position="absolute" height="3em" top="0em" left="0em" right="0em" paddingLeft="1em" display="flex" alignItems="center" justifyContent="left">
                         <Typography fontSize="1.25em">
                             <b>Enter Folder Name</b>
@@ -35,7 +35,7 @@ export const DialogAddFolder = (props: DialogAddFolderProps) => {
                             <Close sx={{fontSize: "1.5em"}}/>
                         </Box>
                     </Box>
-                    <Box position="absolute" height="4em" top="3em" left="0em" right="0em" paddingTop="0.25em" display="flex" alignItems="start" justifyContent="center">
+                    <Box marginTop="3em" height="3em" width="100%" paddingTop="0.25em" display="flex" alignItems="start" justifyContent="center" overflow="hidden">
                         <TextField size="small" sx={{width: "18em"}} 
                             value={name}
                             onChange={(event) => {

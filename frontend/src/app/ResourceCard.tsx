@@ -35,7 +35,7 @@ export const ResourceCard = (props: PropsWithChildren<ResourceProps>) => {
     }, [value])
 
     return (
-        <Reorder.Item value={props.resource} dragControls={dragControls} dragListener={false} style={{display: "block", marginBottom: "1em"}}>
+        <Reorder.Item value={props.resource} dragControls={dragControls} dragListener={false} style={{display: "block", marginBottom: "1em", width: "18.5em"}}>
             <Accordion disableGutters variant="outlined" expanded={props.resource.expanded}>
                 <AccordionSummary sx={{height: "4em"}} expandIcon={
                     <Box onClick={() => {

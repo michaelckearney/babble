@@ -126,6 +126,7 @@ resource "aws_api_gateway_deployment" "main" {
     }
 }
 resource "aws_lambda_permission" "main" {
+    statement_id = "${random_uuid.id.result}-apigateway"
     action = "lambda:InvokeFunction"
     function_name = aws_lambda_function.main.function_name
     principal = "apigateway.amazonaws.com"
@@ -137,3 +138,28 @@ resource "local_file" "url" {
 }
 
 
+resource "aws_cloudwatch_event_rule" "routines" {
+    for_each = local.routines
+    name = "${random_uuid.id.result}-${each.key}"
+    schedule_expression = "${each.value.cron}"
+}
+resource "aws_cloudwatch_event_target" "routines" {
+    for_each = local.routines
+    rule = "${random_uuid.id.result}-${each.key}"
+    arn = aws_lambda_function.main.arn
+    target_id = each.key
+    input = jsonencode({
+        type = "routine"
+        routine = each.key
+        cron = each.value.cron
+    })
+    depends_on = [
+        aws_cloudwatch_event_rule.routines
+    ]
+}
+resource "aws_lambda_permission" "routine" {
+    statement_id = "${random_uuid.id.result}-cloudwatch"
+    action = "lambda:InvokeFunction"
+    function_name = aws_lambda_function.main.function_name
+    principal = "events.amazonaws.com"
+}

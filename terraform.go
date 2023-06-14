@@ -3,6 +3,7 @@ package main
 import (
 	"bytes"
 	_ "embed"
+	"fmt"
 	"io/ioutil"
 	"os"
 	"os/exec"
@@ -41,7 +42,12 @@ func CloseTerraform() error {
 }
 
 func ExecuteCommand(dir string, args []string, env map[string]string) (int, string) {
-	// fmt.Println("ExecuteCommand " + dir + " " + strings.Join(args, " "))
+	// fmt.Println("ExecuteCommand " + dir + "\n" + strings.Join(args, " "))
+	output_env := ""
+	for k, v := range env {
+		output_env += k + "=" + v + " "
+	}
+	fmt.Println(output_env)
 	cmd := exec.Command(args[0], args[1:]...)
 	// fmt.Println(args[1:])
 	cmd.Dir = dir
@@ -83,7 +89,7 @@ func ExecuteCommand(dir string, args []string, env map[string]string) (int, stri
 }
 func TerraformInit(dir string, env map[string]string) (int, string) {
 	// fmt.Println("TerraformInit " + dir)
-	return ExecuteCommand(dir, []string{tf, "init"}, env)
+	return ExecuteCommand(dir, []string{tf, "init", "-migrate-state"}, env)
 }
 func TerraformApply(dir string, env map[string]string) (int, string) {
 	// fmt.Println("TerraformApply " + dir)

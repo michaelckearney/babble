@@ -24,11 +24,11 @@ interface ServiceStackProps {
 export const ServiceStack = (props: ServiceStackProps) => {
     return (
         <Box position="absolute" top="0em" bottom="0em" left="0em" right="0em">
-            <Drawer variant="permanent" transitionDuration={0} 
+            <Drawer hideBackdrop variant="permanent" transitionDuration={0}
                 PaperProps={{ 
-                    sx: { position: "absolute", top: 0, bottom: 0, left: 0, right: "-2em", paddingRight: "2em", border: "0px", zIndex: 0 } 
+                    sx: { position: "absolute", top: 0, bottom: 0, left: 0, paddingRight: "2em", border: "0px", zIndex: 0 } 
                 }} >
-                <List disablePadding sx={{marginRight: ""}}>
+                <List disablePadding>
                     {
                         props.state.state.subfolders.map((subfolder: string) => (
                             <FolderCard key={subfolder} state={props.state} folder={subfolder} />
@@ -42,9 +42,9 @@ export const ServiceStack = (props: ServiceStackProps) => {
 
                     {/* <ContextMenuAddService state={props.state}> */}
                         <ListItem disablePadding sx={{marginBottom: "1em"}}>
-                            <Paper variant="outlined" sx={{height: "4em", width: "100%", display:"flex", alignItems:"center", justifyContent:"center"}}>
+                            <Paper variant="outlined" sx={{height: "4em", width: "18.5em", display:"flex", alignItems:"center", justifyContent:"center"}}>
                                 <Box position="absolute" top="0em" bottom="0em" left="0em" right="0em" display="flex" alignItems="center" justifyContent="center">
-                                    <Add sx={{fontSize: "2em"}} />
+                                    <Add sx={{fontSize: props.state.state.font * 2}} />
                                 </Box>
                                 <Button color="inherit" sx={{height: "100%", width: "100%"}} 
                                     onClick={(e: React.MouseEvent) => {

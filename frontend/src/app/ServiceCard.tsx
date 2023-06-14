@@ -19,7 +19,7 @@ export const ServiceCard = (props: ServiceCardProps) => {
     return (
         <ListItem disablePadding sx={{marginBottom: "1em"}}>
 
-            <Paper variant="outlined" sx={{height: "4em", width: "100%"}}>
+            <Paper variant="outlined" sx={{height: "4em", width: "18.5em"}}>
                 <Box position="absolute" width="4em" top="0em" bottom="0em" left="0em" display="flex" alignItems="center" justifyContent="center">
                     <ServiceIcon service={props.service} />
                 </Box>

@@ -120,6 +120,10 @@ function App() {
         error: false,
     })
     const state = new State(getState, setState)
+
+    useEffect(() => {
+        console.log(state.state)
+    }, [state])
     
     useEffect(() => {
         state.TestState()
@@ -171,17 +175,16 @@ function App() {
                     </Paper>
                 </Box>
             </Box>
-            <ContextMenuService state={state} />
-            <ContextMenuAddService state={state} />
-            <ContextMenuResource state={state} />
-            <ContextMenuAddResource state={state} />
-            <DialogAddService state={state} />
-            <DialogAddFolder state={state} />
-            <DialogActivateProvider state={state} />
-            <DialogActivateCredentials state={state} />
-            <DialogNavigate state={state} />
-            
         </Paper>
+        <ContextMenuService state={state} />
+        <ContextMenuAddService state={state} />
+        <ContextMenuResource state={state} />
+        <ContextMenuAddResource state={state} />
+        <DialogAddService state={state} />
+        <DialogAddFolder state={state} />
+        <DialogActivateProvider state={state} />
+        <DialogActivateCredentials state={state} />
+        <DialogNavigate state={state} />
         <DialogSettings state={state} />
         </Box>
         </ThemeProvider>

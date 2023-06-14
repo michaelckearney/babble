@@ -73,7 +73,6 @@ func GetTerraformAws(config string, credentials []PresetProviderCredential) map[
 	locals += "\tlambda_input = jsonencode({\n"
 	locals += "\t\tbucket = aws_s3_bucket.layer.id\n"
 	locals += "\t\tkey = \"layer.zip\"\n"
-
 	// adding pip packages
 	locals += "\t\tpackages = {\n"
 	for k, v := range c {
@@ -87,7 +86,6 @@ func GetTerraformAws(config string, credentials []PresetProviderCredential) map[
 		}
 	}
 	locals += "\t\t}\n"
-
 	// adding pip requirements for modules
 	locals += "\t\tmodules = {\n"
 	module_packages := []string{}
@@ -111,7 +109,6 @@ func GetTerraformAws(config string, credentials []PresetProviderCredential) map[
 	}
 	locals += "\t\t}\n"
 	locals += "\t})\n"
-
 	// preparing endpoints for openapi specifications
 	paths := []string{}
 	methods := map[string][]string{}
@@ -127,28 +124,60 @@ func GetTerraformAws(config string, credentials []PresetProviderCredential) map[
 		}
 	}
 	// adding openapi specifications to locals
+
 	locals += "\tapi_input = jsonencode({\n"
 	locals += "\t\topenapi = \"3.0.3\"\n"
 	locals += "\t\tpaths = {\n"
-	for _, path := range paths {
-		locals += "\t\t\t\"" + path + "\" = {\n"
-		for _, method := range methods[path] {
-			locals += "\t\t\t\t\"" + strings.ToLower(method) + "\" = {\n"
-			locals += "\t\t\t\t\tx-amazon-apigateway-integration: {\n"
+	if len(paths) > 0 {
+		for _, path := range paths {
+			locals += "\t\t\t\"" + path + "\" = {\n"
+			for _, method := range methods[path] {
+				locals += "\t\t\t\t\"" + strings.ToLower(method) + "\" = {\n"
+				locals += "\t\t\t\t\tx-amazon-apigateway-integration: {\n"
 
-			locals += "\t\t\t\t\t\ttype: \"AWS_PROXY\"\n"
-			locals += "\t\t\t\t\t\turi: aws_lambda_function.main.invoke_arn\n"
-			locals += "\t\t\t\t\t\thttpMethod: \"POST\"\n"
-			locals += "\t\t\t\t\t\tpassthroughBehavior: \"when_no_match\"\n"
+				locals += "\t\t\t\t\t\ttype: \"AWS_PROXY\"\n"
+				locals += "\t\t\t\t\t\turi: aws_lambda_function.main.invoke_arn\n"
+				locals += "\t\t\t\t\t\thttpMethod: \"POST\"\n"
+				locals += "\t\t\t\t\t\tpassthroughBehavior: \"when_no_match\"\n"
 
-			locals += "\t\t\t\t\t}\n"
-			locals += "\t\t\t\t}\n"
+				locals += "\t\t\t\t\t}\n"
+				locals += "\t\t\t\t}\n"
+			}
+			locals += "\t\t\t}\n"
 		}
+	} else {
+		locals += "\t\t\t\"/placeholder\" = {\n"
+		locals += "\t\t\t\t\"get\" = {\n"
+		locals += "\t\t\t\t\tx-amazon-apigateway-integration: {\n"
+		locals += "\t\t\t\t\t\ttype: \"AWS_PROXY\"\n"
+		locals += "\t\t\t\t\t\turi: aws_lambda_function.main.invoke_arn\n"
+		locals += "\t\t\t\t\t\thttpMethod: \"POST\"\n"
+		locals += "\t\t\t\t\t\tpassthroughBehavior: \"when_no_match\"\n"
+		locals += "\t\t\t\t\t}\n"
+		locals += "\t\t\t\t}\n"
 		locals += "\t\t\t}\n"
 	}
 	locals += "\t\t}\n"
 	locals += "\t})\n"
+	// preparing routines for local declaration
+	locals += "\troutines = {\n"
+	for name, resource := range c {
+		if resource.Resource == "routine" {
+			locals += "\t\t\"" + name + "\": {\n"
+			locals += "\t\t\tcron = \"cron(" + resource.Settings["cron"].(string) + ")\"\n"
+			locals += "\t\t}\n"
+		}
+	}
+	locals += "\t}\n"
 	locals += "}"
+
+	// for name, routine := range routines {
+	// 	locals += "\t\t\"" + name + "\" = <<-EOT\n"
+	// 	for _, line := range strings.Split(routine["content"], "\n") {
+	// 		locals += "\t\t" + line + "\n"
+	// 	}
+	// 	locals += "\t\tEOT\n"
+	// }
 
 	// adding locals to main
 	main = strings.Replace(main, "locals {\n}", locals, -1)
@@ -182,6 +211,7 @@ func GetTerraformAws(config string, credentials []PresetProviderCredential) map[
 			imports += "import _" + hash(name) + "\n"
 		}
 	}
+
 	// preparing endpoints for main lambda function source code
 	endpoints := "endpoints = {\n"
 	for _, path := range paths {
@@ -199,6 +229,14 @@ func GetTerraformAws(config string, credentials []PresetProviderCredential) map[
 	}
 	endpoints += "}\n"
 
+	routines := "routines = {\n"
+	for name, resource := range c {
+		if resource.Resource == "routine" {
+			routines += "\t'" + name + "': _" + hash(name) + ",\n"
+		}
+	}
+	routines += "}\n"
+
 	// adding main lambda function source code
 	main += "data \"archive_file\" \"main\" {\n"
 	main += "\ttype = \"zip\"\n"
@@ -206,13 +244,11 @@ func GetTerraformAws(config string, credentials []PresetProviderCredential) map[
 	main += "\tsource {\n"
 	main += "\t\tfilename = \"main.py\"\n"
 	main += "\t\tcontent = <<-EOT\n"
-
-	for _, line := range strings.Split(imports+endpoints+template.Function, "\n") {
+	for _, line := range strings.Split(imports+endpoints+routines+template.Function, "\n") {
 		main += "\t\t" + line + "\n"
 	}
 	main += "\t\tEOT\n"
 	main += "\t}\n"
-
 	// adding source code for modules
 	for name, resource := range c {
 
@@ -234,7 +270,6 @@ func GetTerraformAws(config string, credentials []PresetProviderCredential) map[
 		main += "\t\tEOT\n"
 		main += "\t}\n"
 	}
-
 	// adding source code for scripts, routines, and endpoints
 	for name, resource := range c {
 		if resource.Resource == "script" || resource.Resource == "routine" || resource.Resource == "endpoint" {

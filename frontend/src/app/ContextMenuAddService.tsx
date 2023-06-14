@@ -12,7 +12,7 @@ import Typography from '@mui/material/Typography'
 import FolderOutlined from '@mui/icons-material/FolderOutlined'
 import CloudOutlined from '@mui/icons-material/CloudOutlined'
 
-import purple from '@mui/material/colors/purple'
+import blue from '@mui/material/colors/blue'
 
 import {useState, PropsWithChildren} from 'react'
 
@@ -59,7 +59,7 @@ export const ContextMenuAddService = (props: PropsWithChildren<ContextMenuAddSer
                                             <Box position="absolute" top="0" bottom="0" left="0" width="3.5em" display="flex" alignItems="center" justifyContent="center">
                                                 {
                                                     option === "folder" ? (
-                                                        <FolderOutlined sx={{color: purple[500]}} />
+                                                        <FolderOutlined sx={{color: blue[500]}} />
                                                     ) : option === "service" ? (
                                                         <CloudOutlined />
                                                     ) : <Box />

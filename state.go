@@ -595,7 +595,7 @@ func (a *App) HandleContextMenuAddResource(state string, option string) string {
 		if r.Title == option {
 			newResource := ServiceResource{
 				Index:     len(s.Service.Resources),
-				Title:     "",
+				Title:     "untitled",
 				Subtitle:  r.Title,
 				IconPath:  r.IconPath,
 				IconColor: r.IconColor,
