@@ -141,7 +141,7 @@ resource "local_file" "url" {
 resource "aws_cloudwatch_event_rule" "routines" {
     for_each = local.routines
     name = "${random_uuid.id.result}-${each.key}"
-    schedule_expression = "${each.value.cron}"
+    schedule_expression = "cron(${each.value.cron})"
 }
 resource "aws_cloudwatch_event_target" "routines" {
     for_each = local.routines

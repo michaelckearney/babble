@@ -2,7 +2,6 @@ import State from '../State'
 
 import Box from '@mui/material/Box'
 import Dialog from '@mui/material/Dialog'
-import DialogTitle from '@mui/material/DialogTitle'
 import DialogContent from '@mui/material/DialogContent'
 import TextField from '@mui/material/TextField'
 import Typography from '@mui/material/Typography'
@@ -11,13 +10,11 @@ import ListItem from '@mui/material/ListItem'
 import ListItemButton from '@mui/material/ListItemButton'
 import ListItemText from '@mui/material/ListItemText'
 import ListItemIcon from '@mui/material/ListItemIcon'
-import SvgIcon from '@mui/material/SvgIcon'
-import Drawer from '@mui/material/Drawer'
 
 import FolderOutlined from '@mui/icons-material/FolderOutlined'
 import DescriptionOutlined from '@mui/icons-material/DescriptionOutlined'
 
-import purple from '@mui/material/colors/purple'
+import blue from '@mui/material/colors/blue'
 import orange from '@mui/material/colors/orange'
 
 import Close from '@mui/icons-material/Close'
@@ -44,7 +41,7 @@ export const DialogNavigate = (props: DialogNavigateProps) => {
             }
         }}>
             <DialogContent sx={{padding: 0}}>
-                <Box height={props.state.state.dialog === "importSource" ? "30em" : "32em"} width="20em">
+                <Box height={props.state.state.dialog === "importSource" ? "28em" : "31em"} width="20em">
                     <Box position="absolute" height="3em" top="0em" left="0em" right="0em" paddingLeft="1em" display="flex" alignItems="center" justifyContent="left">
                         <Typography fontSize="1.25em">
                             <b>{
@@ -62,8 +59,8 @@ export const DialogNavigate = (props: DialogNavigateProps) => {
                             <Close sx={{fontSize: "1.5em"}}/>
                         </Box>
                     </Box>
-                    <Box position="absolute" top="3em" left="0em" right="0em">
-                        <Box maxHeight="25em" overflow="auto">
+                    <Box marginTop="3em" height="27em" width="100%" overflow="hidden">
+                        <Box maxHeight="27em" overflow="auto" marginRight="-1em">
                             <List disablePadding>
                                 {
                                     props.state.state.navigation.folder !== "" ? (
@@ -72,7 +69,7 @@ export const DialogNavigate = (props: DialogNavigateProps) => {
                                                 props.state.NavigateParent()
                                             }}>
                                                 <ListItemIcon>
-                                                    <FolderOutlined sx={{color: purple[500]}} />
+                                                    <FolderOutlined sx={{color: blue[500]}} />
                                                 </ListItemIcon>
                                                 <ListItemText primary=".." sx={{margin: 0}} />
                                             </ListItemButton>
@@ -85,7 +82,7 @@ export const DialogNavigate = (props: DialogNavigateProps) => {
                                             props.state.NavigateChild(folder)
                                         }}>
                                             <ListItemIcon>
-                                                <FolderOutlined sx={{color: purple[500]}} />
+                                                <FolderOutlined sx={{color: blue[500]}} />
                                             </ListItemIcon>
                                             <ListItemText primary={folder} sx={{margin: 0}} />
                                         </ListItemButton>
@@ -112,10 +109,9 @@ export const DialogNavigate = (props: DialogNavigateProps) => {
                                     
                             </List>
                         </Box>
-                        
                     </Box>
                     <Box display={props.state.state.dialog === "exportDestination" ? "block": "none"}>
-                    <Box position="absolute" top="28em" left="0em" right="0em" height="4em" display="flex" alignItems="center">
+                    <Box position="absolute" top="30em" left="0em" right="0em" height="4em" display="flex" alignItems="center">
 
                         <TextField size="small" value={filename} onChange={(e) => {setFilename(e.target.value)}} sx={{position: "absolute", left: "1em", right: "1em"}}>
 

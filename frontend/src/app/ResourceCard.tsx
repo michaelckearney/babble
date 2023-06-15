@@ -3,7 +3,6 @@ import ResourceSetting from './ResourceSetting';
 import { PropsWithChildren } from 'react';
 
 import Box from '@mui/material/Box';
-import Paper from '@mui/material/Paper';
 import SvgIcon from '@mui/material/SvgIcon';
 import Typography from '@mui/material/Typography';
 import Accordion from '@mui/material/Accordion';
@@ -16,7 +15,6 @@ import { useEffect, useState } from 'react';
 
 import {Reorder, useDragControls} from 'framer-motion';
 import { AccordionDetails, Divider, List, ListItem } from '@mui/material';
-import ContextMenuResource from './ContextMenuResource';
 
 interface ResourceProps {
     state: State,

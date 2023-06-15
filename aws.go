@@ -164,7 +164,7 @@ func GetTerraformAws(config string, credentials []PresetProviderCredential) map[
 	for name, resource := range c {
 		if resource.Resource == "routine" {
 			locals += "\t\t\"" + name + "\": {\n"
-			locals += "\t\t\tcron = \"cron(" + resource.Settings["cron"].(string) + ")\"\n"
+			locals += "\t\t\tcron = \"" + resource.Settings["cron"].(string) + "\"\n"
 			locals += "\t\t}\n"
 		}
 	}

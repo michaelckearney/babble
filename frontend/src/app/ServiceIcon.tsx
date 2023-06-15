@@ -1,19 +1,13 @@
 import State from '../State'
 
-import Cloud from '@mui/icons-material/Cloud'
 import CloudOutlined from '@mui/icons-material/CloudOutlined'
 import CloudSyncOutlined from '@mui/icons-material/CloudSyncOutlined'
 import CloudDoneOutlined from '@mui/icons-material/CloudDoneOutlined'
 import CloudOff from '@mui/icons-material/CloudOff'
 
 import red from '@mui/material/colors/red'
-import orange from '@mui/material/colors/orange'
 import amber from '@mui/material/colors/amber'
 import green from '@mui/material/colors/green'
-import blue from '@mui/material/colors/blue'
-import purple from '@mui/material/colors/purple'
-
-import createTheme from '@mui/material/styles/createTheme';
 
 interface ServiceIconProps {
     service: typeof State.prototype.state.service | typeof State.prototype.state.services[number],

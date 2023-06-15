@@ -10,7 +10,6 @@ import Add from '@mui/icons-material/Add'
 import {Reorder} from 'framer-motion'
 
 import ResourceCard from './ResourceCard'
-import ContextMenuAddResource from './ContextMenuAddResource'
 
 interface ResourceStackProps {
     state: State,

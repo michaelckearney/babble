@@ -1,24 +1,11 @@
 import Box from '@mui/material/Box'
-import Dialog from '@mui/material/Dialog'
-import DialogTitle from '@mui/material/DialogTitle'
-import DialogContent from '@mui/material/DialogContent'
-import TextField from '@mui/material/TextField'
 import Typography from '@mui/material/Typography'
-import List from '@mui/material/List'
-import ListItem from '@mui/material/ListItem'
-import ListItemButton from '@mui/material/ListItemButton'
-import ListItemText from '@mui/material/ListItemText'
-import ListItemIcon from '@mui/material/ListItemIcon'
-import SvgIcon from '@mui/material/SvgIcon'
-import Drawer from '@mui/material/Drawer'
 import Paper from '@mui/material/Paper'
 import Modal from '@mui/material/Modal'
 
 import Close from '@mui/icons-material/Close'
 import BrightnessMediumIcon from '@mui/icons-material/BrightnessMedium'
 import FormatSizeIcon from '@mui/icons-material/FormatSize'
-
-import createTheme from '@mui/material/styles/createTheme'
 
 import State from '../State'
 

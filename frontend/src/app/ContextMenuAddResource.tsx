@@ -7,7 +7,7 @@ import ListItemButton from '@mui/material/ListItemButton'
 import SvgIcon from '@mui/material/SvgIcon'
 import Typography from '@mui/material/Typography'
 
-import {useState, PropsWithChildren} from 'react'
+import {PropsWithChildren} from 'react'
 
 import State from '../State'
 

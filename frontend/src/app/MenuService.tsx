@@ -4,8 +4,6 @@ import ClickAwayListener from '@mui/material/ClickAwayListener'
 import List from '@mui/material/List'
 import ListItem from '@mui/material/ListItem'
 import ListItemButton from '@mui/material/ListItemButton'
-import ListItemText from '@mui/material/ListItemText'
-import ListItemIcon from '@mui/material/ListItemIcon'
 
 import PlayArrow from '@mui/icons-material/PlayArrow'
 import Replay from '@mui/icons-material/Replay'
@@ -21,7 +19,7 @@ import ThemeProvider from '@mui/material/styles/ThemeProvider'
 import createTheme from '@mui/material/styles/createTheme';
 import Error from '@mui/icons-material/Error'
 
-import {useState, PropsWithChildren} from 'react'
+import {PropsWithChildren} from 'react'
 
 import State from '../State'
 
@@ -50,27 +48,31 @@ export const MenuService = (props: PropsWithChildren<MenuServiceProps>) => {
     });
     
     const options = (
-        props.state.state.page !== "service" ? (
+        props.state.state.page === "service" ? (
             props.state.state.service.status.status === "active" ? [
                 "copy url",
-                "edit",
+                "exit",
                 "reactivate",
                 "deactivate",
                 "import",
                 "export",
                 "delete",
             ]: props.state.state.service.status.status === "inactive" ? [
-                "edit",
+                "exit",
                 "activate",
-                "deactivate",
                 "import",
                 "export",
                 "delete",
             ]: props.state.state.service.status.status === "error" ? [
                 "view error logs",
-                "edit",
+                "exit",
                 "reactivate",
                 "deactivate",
+                "import",
+                "export",
+                "delete",
+            ] : props.state.state.service.status.status === "activating" || props.state.state.service.status.status === "deactivating" ? [
+                "exit",
                 "import",
                 "export",
                 "delete",
@@ -78,24 +80,28 @@ export const MenuService = (props: PropsWithChildren<MenuServiceProps>) => {
         ) : (
             props.state.state.service.status.status === "active" ? [
                 "copy url",
-                "exit",
+                "edit",
                 "reactivate",
                 "deactivate",
                 "import",
                 "export",
                 "delete",
             ]: props.state.state.service.status.status === "inactive" ? [
-                "exit",
+                "edit",
                 "activate",
-                "deactivate",
                 "import",
                 "export",
                 "delete",
             ]: props.state.state.service.status.status === "error" ? [
                 "view error logs",
-                "exit",
+                "edit",
                 "reactivate",
                 "deactivate",
+                "import",
+                "export",
+                "delete",
+            ] : props.state.state.service.status.status === "activating" || props.state.state.service.status.status === "deactivating" ? [
+                "edit",
                 "import",
                 "export",
                 "delete",

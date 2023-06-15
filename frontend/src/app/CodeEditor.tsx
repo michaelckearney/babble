@@ -10,7 +10,6 @@ import Close from '@mui/icons-material/Close'
 import Editor from '@monaco-editor/react'
 
 import State from '../State'
-import ServiceIcon from './ServiceIcon'
 
 import {useRef, useEffect} from 'react'
 

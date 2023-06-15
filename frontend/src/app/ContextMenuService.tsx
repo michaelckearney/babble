@@ -4,8 +4,6 @@ import ClickAwayListener from '@mui/material/ClickAwayListener'
 import List from '@mui/material/List'
 import ListItem from '@mui/material/ListItem'
 import ListItemButton from '@mui/material/ListItemButton'
-import ListItemText from '@mui/material/ListItemText'
-import ListItemIcon from '@mui/material/ListItemIcon'
 
 import PlayArrow from '@mui/icons-material/PlayArrow'
 import Replay from '@mui/icons-material/Replay'

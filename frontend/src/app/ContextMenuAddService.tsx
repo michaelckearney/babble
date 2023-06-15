@@ -4,9 +4,6 @@ import ClickAwayListener from '@mui/material/ClickAwayListener'
 import List from '@mui/material/List'
 import ListItem from '@mui/material/ListItem'
 import ListItemButton from '@mui/material/ListItemButton'
-import ListItemText from '@mui/material/ListItemText'
-import ListItemIcon from '@mui/material/ListItemIcon'
-import SvgIcon from '@mui/material/SvgIcon'
 import Typography from '@mui/material/Typography'
 
 import FolderOutlined from '@mui/icons-material/FolderOutlined'
@@ -14,7 +11,7 @@ import CloudOutlined from '@mui/icons-material/CloudOutlined'
 
 import blue from '@mui/material/colors/blue'
 
-import {useState, PropsWithChildren} from 'react'
+import {PropsWithChildren} from 'react'
 
 import State from '../State'
 

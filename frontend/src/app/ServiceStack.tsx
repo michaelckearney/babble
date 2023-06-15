@@ -10,12 +10,6 @@ import Add from '@mui/icons-material/Add'
 import State from '../State'
 import ServiceCard from './ServiceCard'
 import FolderCard from './FolderCard'
-import ContextMenuService from './ContextMenuService'
-
-
-import ContextMenuAddService from './ContextMenuAddService'
-import DialogAddService from './DialogAddService'
-
 
 interface ServiceStackProps {
     state: State,
@@ -39,29 +33,23 @@ export const ServiceStack = (props: ServiceStackProps) => {
                             <ServiceCard key={service.title} state={props.state} service={service} />
                         ))
                     }
-
-                    {/* <ContextMenuAddService state={props.state}> */}
-                        <ListItem disablePadding sx={{marginBottom: "1em"}}>
-                            <Paper variant="outlined" sx={{height: "4em", width: "18.5em", display:"flex", alignItems:"center", justifyContent:"center"}}>
-                                <Box position="absolute" top="0em" bottom="0em" left="0em" right="0em" display="flex" alignItems="center" justifyContent="center">
-                                    <Add sx={{fontSize: props.state.state.font * 2}} />
-                                </Box>
-                                <Button color="inherit" sx={{height: "100%", width: "100%"}} 
-                                    onClick={(e: React.MouseEvent) => {
-                                        props.state.OpenContextMenuAddService(e.pageX, e.pageY)
-                                    }}
-                                    onContextMenu={(e: React.MouseEvent) => {
-                                        e.preventDefault()
-                                        props.state.OpenContextMenuAddService(e.pageX, e.pageY)
-                                    }}
-                                >
-                                </Button>
-                                
-                            </Paper>
-                            
-                        </ListItem>
-                    {/* </ContextMenuAddService> */}
-
+                    <ListItem disablePadding sx={{marginBottom: "1em"}}>
+                        <Paper variant="outlined" sx={{height: "4em", width: "18.5em", display:"flex", alignItems:"center", justifyContent:"center"}}>
+                            <Box position="absolute" top="0em" bottom="0em" left="0em" right="0em" display="flex" alignItems="center" justifyContent="center">
+                                <Add sx={{fontSize: props.state.state.font * 2}} />
+                            </Box>
+                            <Button color="inherit" sx={{height: "100%", width: "100%"}} 
+                                onClick={(e: React.MouseEvent) => {
+                                    props.state.OpenContextMenuAddService(e.pageX, e.pageY)
+                                }}
+                                onContextMenu={(e: React.MouseEvent) => {
+                                    e.preventDefault()
+                                    props.state.OpenContextMenuAddService(e.pageX, e.pageY)
+                                }}
+                            >
+                            </Button>
+                        </Paper>
+                    </ListItem>
                 </List>
             </Drawer>
         </Box>

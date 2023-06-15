@@ -4,13 +4,11 @@ import ClickAwayListener from '@mui/material/ClickAwayListener'
 import List from '@mui/material/List'
 import ListItem from '@mui/material/ListItem'
 import ListItemButton from '@mui/material/ListItemButton'
-import ListItemText from '@mui/material/ListItemText'
-import ListItemIcon from '@mui/material/ListItemIcon'
 import Typography from '@mui/material/Typography'
 
 import Delete from '@mui/icons-material/Delete'
 
-import {useState, PropsWithChildren} from 'react'
+import {PropsWithChildren} from 'react'
 
 import State from '../State'
 

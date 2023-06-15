@@ -1,21 +1,14 @@
 import Box from '@mui/material/Box'
 import Dialog from '@mui/material/Dialog'
-import DialogTitle from '@mui/material/DialogTitle'
 import DialogContent from '@mui/material/DialogContent'
 import TextField from '@mui/material/TextField'
 import Typography from '@mui/material/Typography'
 import List from '@mui/material/List'
 import ListItem from '@mui/material/ListItem'
-import ListItemButton from '@mui/material/ListItemButton'
-import ListItemText from '@mui/material/ListItemText'
-import ListItemIcon from '@mui/material/ListItemIcon'
-import SvgIcon from '@mui/material/SvgIcon'
-import Button from '@mui/material/Button'
 
 import Close from '@mui/icons-material/Close'
 
 import State from '../State'
-import { ChangeCredentialValue } from '../../wailsjs/go/main/App';
 
 interface DialogActivateCredentialsProps {
     state: State,
