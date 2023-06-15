@@ -2,7 +2,7 @@
 
 Babble is a lightweight desktop application for creating and managing fully serverless microservices on AWS.  Babble is designed to be used by developers of all skill levels, from beginners to experts. The only programming language you need to know is Python.  Babble uses a lightweight YAML-based framework that drastically improves the size and readability of your codebase while reducing the learning curve for backend development.  Its responsive user interface with integrated code editors improve the efficiency of your development process.
 
-<img src="https://michaelckearney.s3.amazonaws.com/assets/images/homepage_screenshot.jpeg" width="100%">
+<img src="https://michaelckearney.s3.amazonaws.com/assets/images/homepage_screenshot.jpeg?" width="100%">
 
 # How it Works
 
