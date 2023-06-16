@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/babble/static/css/main.073c9b0a.css",
-    "main.js": "/babble/static/js/main.5a5941a4.js",
+    "main.css": "/babble/static/css/main.a6c0333f.css",
+    "main.js": "/babble/static/js/main.68353819.js",
     "static/js/787.5c39024c.chunk.js": "/babble/static/js/787.5c39024c.chunk.js",
     "static/media/linux.svg": "/babble/static/media/linux.120cb2ac92d17333a5993b607756bd97.svg",
     "static/media/github.svg": "/babble/static/media/github.97ed8e7eef60d61ca469881dd6f34511.svg",
@@ -9,12 +9,12 @@
     "static/media/linkedin.svg": "/babble/static/media/linkedin.c91f5266aa1c9dc5a6426b9a8fc15617.svg",
     "index.html": "/babble/index.html",
     "static/media/windows.svg": "/babble/static/media/windows.24cee601200bbfe9b313109e0029b6cc.svg",
-    "main.073c9b0a.css.map": "/babble/static/css/main.073c9b0a.css.map",
-    "main.5a5941a4.js.map": "/babble/static/js/main.5a5941a4.js.map",
+    "main.a6c0333f.css.map": "/babble/static/css/main.a6c0333f.css.map",
+    "main.68353819.js.map": "/babble/static/js/main.68353819.js.map",
     "787.5c39024c.chunk.js.map": "/babble/static/js/787.5c39024c.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.073c9b0a.css",
-    "static/js/main.5a5941a4.js"
+    "static/css/main.a6c0333f.css",
+    "static/js/main.68353819.js"
   ]
 }
