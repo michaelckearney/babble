@@ -4,13 +4,13 @@ Babble is a lightweight desktop application for creating and managing fully serv
 
 For an interactive demo, visit the [Babble Homepage](https://michaelckearney.github.io/babble).
 
-# How it Works
+## How it Works
 
 When you open Babble, you can navigate to any folder of your choosing.  You can then create a new service or import an existing service file.  A service is a collection of resources that are deployed together as a single unit, defined in a single YAML file.  These resources include packages, folders, tables, libraries, scripts, routines, and endpoints.  Babble's intuitive user interface makes it simple to create and manage complex services and resources.  When you activate a service, the Babble interpreter will translate your simple YAML declarations into complex Terraform configurations to provision the AWS infrastructure necessary to run your service.  This includes provisioning all of the necessary AWS resources and generating the Python code that integrates them into your Lambda Function.  This makes Babble a great option for developers who want to focus on writing code and not worry about the underlying infrastructure.  Babble comes with Terraform pre-installed so you don't even need to open the Command Line.
 
-# Resources
+## Resources
 
-## <span style="height:1em;display:inline-flex;text-align:left;align-items:center;"><img height="24px" width="24px" src="https://raw.githubusercontent.com/michaelckearney/babble/1235241c094423e14f3bbf4c662c491ad9f998c1/backend/resources/package/icon.svg">&ensp;Package</span>
+### <span style="height:1em;display:inline-flex;text-align:left;align-items:center;"><img height="24px" width="24px" src="https://raw.githubusercontent.com/michaelckearney/babble/1235241c094423e14f3bbf4c662c491ad9f998c1/backend/resources/package/icon.svg">&ensp;Package</span>
 Packages are how we add third-party Python packages to our service using the Python Package Index. When you activate a service, a separate Lambda Function will be created and invoked once to install your specified packages and create a Lambda Layer containing these packages.  This Layer will be attached to your Lambda Function and all necessary imports will be automatically generated.
 <details>
     <summary>
@@ -34,7 +34,7 @@ Packages are how we add third-party Python packages to our service using the Pyt
 </details>
 <br /><br />
 
-## <span style="height:1em;display:inline-flex;text-align:left;align-items:center;"><img height="24px" width="24px" src="https://raw.githubusercontent.com/michaelckearney/babble/120dddb7417347121eaab9a046e14b1aa2c3fd2a/backend/resources/folder/icon.svg">&ensp;Folder</span>
+### <span style="height:1em;display:inline-flex;text-align:left;align-items:center;"><img height="24px" width="24px" src="https://raw.githubusercontent.com/michaelckearney/babble/120dddb7417347121eaab9a046e14b1aa2c3fd2a/backend/resources/folder/icon.svg">&ensp;Folder</span>
 Folders are used to read and write files using cloud-based serverless object storage.  When deployed, this will be used to create an S3 bucket with which you can read files, write files, and generate temporary file URLs.  The necessary client code will be added to the Lambda function and all necessary imports will be automatically generated.
 <details>
     <summary>
@@ -54,7 +54,7 @@ Folders are used to read and write files using cloud-based serverless object sto
 </details>
 <br />
 
-## <span style="height:1em;display:inline-flex;text-align:left;align-items:center;"><img height="24px" width="24px" src="https://raw.githubusercontent.com/michaelckearney/babble/120dddb7417347121eaab9a046e14b1aa2c3fd2a/backend/resources/table/icon.svg">&ensp;Table</span>
+### <Span style="height:1em;display:inline-flex;text-align:left;align-items:center;"><img height="24px" width="24px" src="https://raw.githubusercontent.com/michaelckearney/babble/120dddb7417347121eaab9a046e14b1aa2c3fd2a/backend/resources/table/icon.svg">&ensp;Table</span>
 Tables are used for the storage and retrieval of data using cloud-based serverless key-value databases.  When deployed, this will be used to create a DynamoDB table in which you can create, read, update, and delete data.  The necessary client code will be added to the Lambda function and all necessary imports will be automatically generated.
 <details>
     <summary>
@@ -77,7 +77,7 @@ Tables are used for the storage and retrieval of data using cloud-based serverle
 </details>
 <br />
 
-## <span style="height:1em;display:inline-flex;text-align:left;align-items:center;"><img height="24px" width="24px" src="https://raw.githubusercontent.com/michaelckearney/babble/120dddb7417347121eaab9a046e14b1aa2c3fd2a/backend/resources/library/icon.svg">&ensp;Library</span>
+### <Span style="height:1em;display:inline-flex;text-align:left;align-items:center;"><img height="24px" width="24px" src="https://raw.githubusercontent.com/michaelckearney/babble/120dddb7417347121eaab9a046e14b1aa2c3fd2a/backend/resources/library/icon.svg">&ensp;Library</span>
 Libraries allow us to import modules from the Python Standard Library.  These are intended to be used instead of import statements to prevent naming conflicts and further reduce the size of your codebase.  The libraries you define will be accessible from your scripts, routines, and endpoints.
 <details>
     <summary>
@@ -100,7 +100,7 @@ Libraries allow us to import modules from the Python Standard Library.  These ar
 </details>
 <br />
 
-## <span style="height:1em;display:inline-flex;text-align:left;align-items:center;"><img height="24px" width="24px" src="https://raw.githubusercontent.com/michaelckearney/babble/120dddb7417347121eaab9a046e14b1aa2c3fd2a/backend/resources/script/icon.svg">&ensp;Script</span>
+### <Span style="height:1em;display:inline-flex;text-align:left;align-items:center;"><img height="24px" width="24px" src="https://raw.githubusercontent.com/michaelckearney/babble/120dddb7417347121eaab9a046e14b1aa2c3fd2a/backend/resources/script/icon.svg">&ensp;Script</span>
 Scripts allow you to define functions and classes that can be referenced from your endpoints, routines, and other scripts.  The code you write will be added to your Lambda Function and all necessary imports will be automatically generated.
 <details>
     <summary>
@@ -129,7 +129,7 @@ Scripts allow you to define functions and classes that can be referenced from yo
 </details>
 <br />
 
-## <span style="height:1em;display:inline-flex;text-align:left;align-items:center;"><img height="24px" width="24px" src="https://raw.githubusercontent.com/michaelckearney/babble/120dddb7417347121eaab9a046e14b1aa2c3fd2a/backend/resources/routine/icon.svg">&ensp;Routine</span>
+### <Span style="height:1em;display:inline-flex;text-align:left;align-items:center;"><img height="24px" width="24px" src="https://raw.githubusercontent.com/michaelckearney/babble/120dddb7417347121eaab9a046e14b1aa2c3fd2a/backend/resources/routine/icon.svg">&ensp;Routine</span>
 Routines are used to repeat a set of instructions at a specified interval. The interval is specified using a cron-formatted line of text.  When deployed, this will be used to create an EventBridge Rule, formerly known as CloudWatch Events, that will invoke your Lambda Function at the specified interval.  The necessary client code will be added to the Lambda function and all necessary imports will be automatically generated.
 <details>
     <summary>
@@ -164,7 +164,7 @@ Routines are used to repeat a set of instructions at a specified interval. The i
 </details>
 <br />
 
-## <span style="height:1em;display:inline-flex;text-align:left;align-items:center;"><img height="24px" width="24px" src="https://raw.githubusercontent.com/michaelckearney/babble/120dddb7417347121eaab9a046e14b1aa2c3fd2a/backend/resources/endpoint/icon.svg">&ensp;Endpoint</span>
+### <Span style="height:1em;display:inline-flex;text-align:left;align-items:center;"><img height="24px" width="24px" src="https://raw.githubusercontent.com/michaelckearney/babble/120dddb7417347121eaab9a046e14b1aa2c3fd2a/backend/resources/endpoint/icon.svg">&ensp;Endpoint</span>
 Endpoints are used to define the API Gateway endpoints that will be used to invoke your Lambda Function.  When deployed, this will be used to create an API Gateway REST API with the specified endpoints.  The necessary client code will be added to the Lambda function and all necessary imports will be automatically generated.
 <details>
     <summary>
