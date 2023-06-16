@@ -15,11 +15,7 @@ interface DialogSettingsProps {
     state: State,
 }
 export const DialogSettings = (props: DialogSettingsProps) => {
-
-
-
     return (
-        
         <Box position="fixed" top="0em" bottom="0em" left="0em" right="0em" display={props.state.state.dialog === "settings" ? "flex" : "none"} alignItems="center" justifyContent="center" sx={{userSelect: "none"}}>
             <Modal open={props.state.state.dialog === "settings"} disableAutoFocus disableEnforceFocus sx={{position: "absolute", top: 0, bottom: 0, left: 0, right: 0, display: "flex", alignItems: "center", justifyContent: "center"}}>
                 <Box fontSize={props.state.state.font} display="flex" alignItems="center" justifyContent="center">

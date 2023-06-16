@@ -2,8 +2,6 @@
 
 Babble is a lightweight desktop application for creating and managing fully serverless microservices on AWS.  Babble is designed to be used by developers of all skill levels, from beginners to experts. The only programming language you need to know is Python.  Babble uses a lightweight YAML-based framework that drastically improves the size and readability of your codebase while reducing the learning curve for backend development.  Its responsive user interface with integrated code editors improve the efficiency of your development process.
 
-<img src="https://michaelckearney.s3.amazonaws.com/assets/images/homepage_screenshot.jpeg?" width="100%">
-
 # How it Works
 
 When you open Babble, you can navigate to any folder of your choosing.  You can then create a new service or import an existing service file.  A service is a collection of resources that are deployed together as a single unit, defined in a single YAML file.  These resources include packages, folders, tables, libraries, scripts, routines, and endpoints.  Babble's intuitive user interface makes it simple to create and manage complex services and resources.  When you activate a service, the Babble interpreter will translate your simple YAML declarations into complex Terraform configurations to provision the AWS infrastructure necessary to run your service.  This includes provisioning all of the necessary AWS resources and generating the Python code that integrates them into your Lambda Function.  This makes Babble a great option for developers who want to focus on writing code and not worry about the underlying infrastructure.  Babble comes with Terraform pre-installed so you don't even need to open the Command Line.
