@@ -32,7 +32,7 @@ Packages are how we add third-party Python packages to our service using the Pyt
         <img src="https://michaelckearney.s3.amazonaws.com/assets/images/package_example2.jpeg" width="100%">
     </ul>
 </details>
-<br /><br />
+<br />
 
 ### <span style="height:1em;display:inline-flex;text-align:left;align-items:center;"><img height="24px" width="24px" src="https://raw.githubusercontent.com/michaelckearney/babble/120dddb7417347121eaab9a046e14b1aa2c3fd2a/backend/resources/folder/icon.svg">&ensp;Folder</span>
 Folders are used to read and write files using cloud-based serverless object storage.  When deployed, this will be used to create an S3 bucket with which you can read files, write files, and generate temporary file URLs.  The necessary client code will be added to the Lambda function and all necessary imports will be automatically generated.
