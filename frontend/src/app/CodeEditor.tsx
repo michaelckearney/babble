@@ -82,6 +82,10 @@ export const CodeEditor = (props: CodeEditorProps) => {
                         }}
                         options = {{
                             fontSize: props.state.state.font,
+                            minimap: {
+                                renderCharacters: false,
+                                scale: 2
+                            }
                         }}
                     />
                 </Box>

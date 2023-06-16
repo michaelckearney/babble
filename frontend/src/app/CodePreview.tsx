@@ -109,6 +109,10 @@ export const CodePreview = (props: CodePreviewProps) => {
                             options = {{
                                 readOnly: true,
                                 fontSize: props.state.state.font,
+                                minimap: {
+                                    renderCharacters: false,
+                                    scale: 2
+                                }
                             }}
                         />
                     </Box>
